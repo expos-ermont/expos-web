@@ -1,0 +1,17 @@
+<?php return array(
+	'chelp pending tasks widget' => 'Questo strumento visualizza le attività incomplete. Puoi vedere solo quelle che ti sono state assegnate oppure cambiare questa preferenze modificando le opzioni del sommario',
+	'chelp documents widget' => 'Questo strumento visualizza gli ultimi documenti del progetto selezionato',
+	'chelp active tasks widget' => 'Questo strumento visualizza le attività attive e sospese',
+	'chelp late tasks widget' => 'Questo strumento visualizza le tue ultime attività e traguardi, come le ultime da terminare oggi, ordinate per scadenza',
+	'chelp calendar widget' => 'Questo strumento visualizza gli eventi della settimana corrente, attività in scadenza e traguardi. Puoi creare un nuovo evento cliccando su un giorno.',
+	'chelp comments widget' => 'Questo strumento visualizza gli ultimi commenti relativi agli oggetti del progetto',
+	'chelp dashboard info widget' => 'Questo strumento visualizza informazioni sul progetto corrente, inclusi gli utenti con accesso, contatti assegnati, ecc.',
+	'chelp emails widget' => 'Questo strumento visualizza le utilme email classificate nel progetto',
+	'chelp messages widget' => 'Questo strumento visualizza le ultime annotazioni relative al progetto',
+	'chelp active tasks panel' => 'Tutte le tue attività attive sono visualizzate sotto, senza riguardo al progetto corrente. Puoi sospenderle, riprenderle, fermarle o marcarle come completate.',
+	'chelp general timeslots panel' => 'Questo pannello visualizza i compiti connessi direttamente col progetto. Si tratta di un modo veloce per assegnare e contabilizzare il tempo degli utenti. Puoi anche stampare il rapporto sui tempi impiegati cliccando il collegamento "Stampa rapporti\'.',
+	'chelp personal account' => 'Questo è il tuo account personale,<br/>. In questa vista puoi aggiornare profilo e avatar, cambiara password o modificare le preferenze personali.',
+	'chelp user account' => 'Questo è un account utente.',
+	'chelp user account admin' => 'Come amministratore, puoi aggiornare profilo utente, avatar, cambiare password o modificare le altre preferenze usando questa vista.',
+	'remove context help' => 'Elimina questo messaggio di aiuto.',
+); ?>

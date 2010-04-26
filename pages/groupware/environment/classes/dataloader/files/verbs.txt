@@ -1,0 +1,64 @@
+creep at
+crawl to
+walk to
+run	to
+jump 
+skip 
+hop	
+slither	to
+climb
+dig
+squirm	
+fly	to
+sit	
+stalk	
+stomp
+tiptoe	
+gallop	
+blow	
+dance	
+glide
+swim	
+wash	
+play	
+throw	
+drink
+eat	
+chew	
+sing	
+shout	
+growl
+bark	
+buzz	
+laugh at	
+smile to
+cry to
+go to
+moo	to
+quack to	
+talk to
+yell to
+scream at
+screech	to
+squawk at
+squeal to
+glow 
+listen to	
+paint
+look at	
+read
+knit
+sleep in	
+draw	
+shine at	
+watch	
+kick
+dive	
+find	
+build	
+work	
+explore
+shop	
+clean	
+catch	
+shake

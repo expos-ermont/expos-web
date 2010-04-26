@@ -1,0 +1,32 @@
+
+
+Requirements:
+
+1) PHP 4 or above.
+2) MySQL 4.1.1 or above.
+
+
+
+New Install Instructions:
+
+1) Put all the files on your webserver.
+
+2) Create a database named whatever you wish.
+
+3) Run the SQL code in the install.sql file to create the tables
+
+4) Edit the config.php file and enter the database name, the user account, and password that you wish to use to access the tables created in step 2.  
+
+5) Is the website stand alone (it's own website) or integrated within another website?  If it is integrated, change the CAL_STAND_ALONE parameter in config.php to false, and read the CUSTOMIZE.txt file!
+
+6) You should now be able to view the calendar in the web browser.  Try to login as the username "root" with the default password specified in config.php (set as "abc123" to begin with).  
+
+7) Once logged in you can set the "anonymous" user to have read access if you want events to display without having to log in first.
+
+You should now be good to go.
+
+-Reece
+
+
+PS:  For troubleshooting steps, see HELP.txt
+

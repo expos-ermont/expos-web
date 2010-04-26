@@ -1,0 +1,58 @@
+
+CUSTOMIZING REECE-CALENDAR
+
+1) Stand Alone VS Integrating into your site
+
+	First, please notice the "CAL_STAND_ALONE" parameter in the config.php file.
+
+	*If your calendar is a stand alone website, set this to TRUE.
+	*If your calendar is integrated within another website, set it to FALSE.
+	
+	If integrating, reece-calendar does not write out <html> and <body> tags, or the <head> section.
+	To integrate, simply include the /index.php file where you want the calendar written in your site.
+
+	Please also note that in "integrated" mode, it will read the css and javascript files 
+	and then write them out inside <style> and <script> tags instead of linking to the file normally.  
+	This is to make sure it loads the CSS properly in case you are fetching the entire calendar html 
+	using HTTPXMLRequest() and then insert it into your site with innerHTML like I do 
+	(only way I could get it to work correclty in all browsers). 
+	 
+	If you are integrating it into your site, you can also manually disable where it writes the 
+	css and javascript, and instead link to the files in your site's main header.  To do that, 
+	simply find the header code in the cal_top() function in functions.php
+
+2) Skinning your Calendar (ouch!)
+
+	There are currently only two skins available:
+	*default - I made this one
+	*redskin - color scheme designed by a user
+	 
+	You can find the skins in /skins/*.css
+
+	To create new skins, simply copy a css file and change the colors and other CSS properties that you 
+	wish and then save the file back as something else.  For instance, if you copied default.css and 
+	saved it as yellowflowers.css, "yellowflowers" would become an option in the drop down menu 
+	when selecting the skin in the admin section.
+
+3) Language Support (finally!)
+
+	I finished offloading all text into a seperate language file.
+
+	The languages work the same as the skins, just copy the lanuage file, name it to 
+	what you want, and translate the text in it.  All php files in the languages directory 
+	are options in the language drop down menu in the admin section (this is new).
+
+	Please note that with the language files, they *must* have the ".php" extension.  
+	To change that, you would have to change where I include the file in index.php
+	
+	Right now, only english is available.  If you translate it, please email me the 
+	file and post it on the project's forum at sourceforge so others can use it 
+	in the meantime since it might be a while before the next release when I package it.
+	
+	If you do make your file available, be sure to put a license notice at the top of the 
+	file to avoid any copyright issues (I prefer GPL, but it's your call).
+
+	
+Thats it, enjoy :)
+
+

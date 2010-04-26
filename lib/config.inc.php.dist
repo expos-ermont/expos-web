@@ -1,0 +1,53 @@
+<?php
+/**
+ * Global configuration file
+ *
+ * @author Florent Captier <florent@captier.org>
+ * @filesource
+ */
+
+session_start();
+ 
+define('EOL' , "<br />");
+define('DEBUG' , 2); # Can be 0:off , 1:first-level messages , 2:verbose messages
+
+if(isset($_SERVER['WINDIR'])) {
+	// Windows mode
+	define('DIR_SEP' , '\\');
+} else {
+	// UNIX mode
+	define('DIR_SEP' , '/');
+}
+
+$_CONF['title'] = 'Expos Ermont Baseball/Softball club';
+$_CONF['keywords'] = 'baseball,softball,animations sportives,sport,balle,batte,american sport,sport americain,expos,ermont,sport ermont,baseball ermont,ermont baseball,baseball france,baseball val d\'oise,baseball ile de france,baseball 95';
+$_CONF['description'] = 'Le site officiel du club de baseball et softball des Expos d\'Ermont (Val d\'Oise), retouvez les équipes, les resultats, les actualités et les informations du club';
+$_CONF['wwwRoot'] = 'http://60gp.ovh.net/~exposerm/';
+$_CONF['root'] = preg_replace('/[^\\'.DIR_SEP.']+$/' , '' , dirname(__FILE__));
+$_CONF['libRoot'] = $_CONF['root'].'lib'.DIR_SEP;
+
+$_CONF['db']['user'] = 'exposerm';
+$_CONF['db']['pass'] = 'vFRQQsyi';
+$_CONF['db']['host'] = 'mysql5-14';
+$_CONF['db']['port'] = '3306';
+
+$_CONF['medias']['pictsRoot'] = $_CONF['root'].'picts'.DIR_SEP.'photos'.DIR_SEP;
+
+# Inclusion of some standard files
+require_once($_CONF['libRoot'].'functions.inc.php');
+require_once($_CONF['libRoot'].'User.class.php');
+
+set_exception_handler('myExceptionHandler');
+
+if(isset($_POST['user'])) {
+	try{
+		$_SESSION['user'] = User::authenticate($_POST['user'] , $_POST['pass']);
+		if(DEBUG >= 1) {trigger_error('[DEBUG1] Authentication succeed for '.$_POST['user'] , E_USER_NOTICE);}
+	} catch(Exception $e) {
+		if(DEBUG >= 1) {trigger_error('[DEBUG1] Authentication failed for '.$_POST['user'].' : '.$e->getMessage() , E_USER_NOTICE);}
+	}
+}
+
+if(DEBUG >= 2) {trigger_error('[DEBUG2] Session var dump : '.var_export($_SESSION , true) , E_USER_NOTICE);}
+var_dump($_SESSION);
+?>

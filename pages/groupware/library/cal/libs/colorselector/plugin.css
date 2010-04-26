@@ -1,0 +1,20 @@
+
+
+/* COLOR SELECTOR PLUGIN  */
+
+#csel_plugin {BACKGROUND: #0d0d0d; COLOR: #AAA; DISPLAY: inline; FONT-FAMILY: arial; FONT-SIZE: 11px; PADDING: 7px 10px 11px 10px; _PADDING-RIGHT: 0; position: relative; WIDTH: 199px; height: 190px; _width: 210px; _padding-right: 0px; }
+#csel_plugin br { CLEAR: both; MARGIN: 0; PADDING: 0;  }
+#csel_plugin select { BORDER: 1px solid #333; BACKGROUND: #FFF; POSITION: relative; TOP: 4px; }
+
+#csel_plugHEX { FLOAT: left; position: relative; top: -1px; }
+#csel_plugCLOSE { FLOAT: right; cursor: pointer; MARGIN: 0 8px 3px; _MARGIN-RIGHT: 10px; COLOR: #FFF; -moz-user-select: none; -khtml-user-select: none; user-select: none; }
+
+#csel_plugCUR { float: left; width: 10px; height: 10px; background: #FFF; margin-right: 3px; }
+
+#csel_SV { background: #FF0000 url('SatVal.png'); _BACKGROUND: #FF0000; POSITION: relative; CURSOR: crosshair; FLOAT: left; HEIGHT: 166px; WIDTH: 167px; _WIDTH: 165px; MARGIN-RIGHT: 10px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='SatVal.png', sizingMethod='scale'); -moz-user-select: none; -khtml-user-select: none; user-select: none; }
+#csel_SVslide { BACKGROUND: url('slide.gif'); HEIGHT: 9px; WIDTH: 9px; POSITION: absolute; _font-size: 1px; line-height: 1px; }
+
+#csel_H { BORDER: 1px solid #000; CURSOR: crosshair; FLOAT: left; HEIGHT: 154px; POSITION: relative; WIDTH: 19px; PADDING: 0; TOP: 4px; -moz-user-select: none; -khtml-user-select: none; user-select: none; }
+#csel_Hslide { BACKGROUND: url('slideHue.gif'); HEIGHT: 5px; WIDTH: 33px; POSITION: absolute; _font-size: 1px; line-height: 1px; }
+#csel_Hmodel { POSITION: relative; TOP: -5px; }
+#csel_Hmodel div { HEIGHT: 1px; WIDTH: 19px; font-size: 1px; line-height: 1px; MARGIN: 0; PADDING: 0; }

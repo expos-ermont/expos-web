@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>DHTML Color Picker</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link href="plugin.css" rel="stylesheet" type="text/css" />
+</head>
+<body bgcolor="#000000">
+
+<span id="csel_plugin">
+ <div id="csel_plugCUR"></div><div id="csel_plugHEX" onmousedown="csel_stop=0; setTimeout('csel_stop=1',100);">FFFFFF</div><div id="csel_plugCLOSE" onmousedown="csel_use();">Use This Color</div><br>
+ <div id="csel_SV" onmousedown="csel_HSVslide('csel_SVslide','csel_plugin',event)" title="Saturation + Value">
+
+  <div id="csel_SVslide" style="TOP: -4px; LEFT: -4px;"><br /></div>
+ </div>
+ <form  class="internalForm" id="csel_H" onmousedown="csel_HSVslide('csel_Hslide','csel_plugin',event)" title="Hue">
+  <div id="csel_Hslide" style="TOP: -7px; LEFT: -8px;"><br /></div>
+  <div id="csel_Hmodel"></div>
+ </form>
+</span>
+
+<script type="text/javascript">
+
+// DHTML Color Picker
+// Programming by Ulyses
+// ColorJack.com
+
+function csel_g(v) { return(document.getElementById(v)); }
+function csel_S(v) { return(csel_g(v).style); }
+function csel_agent(v) { return(Math.max(navigator.userAgent.toLowerCase().indexOf(v),0)); }
+function csel_toggle(v) { csel_S(v).display=(csel_S(v).display=='none'?'block':'none'); }
+function csel_within(v,a,z) { return((v>=a && v<=z)?true:false); }
+function csel_XY(e,v) { var z=csel_agent('msie')?[event.clientX+document.body.scrollLeft,event.clientY+document.body.scrollTop]:[e.pageX,e.pageY]; return(z[csel_zero(v)]); }
+function csel_XYwin(v) { var z=csel_agent('msie')?[document.body.clientHeight,document.body.clientWidth]:[window.innerHeight,window.innerWidth]; return(!isNaN(v)?z[v]:z); }
+function csel_zero(v) { v=parseInt(v); return(!isNaN(v)?v:0); }
+
+/* PLUGIN */
+
+var csel_maxValue={'h':360,'s':100,'v':100}, csel_HSV={0:360,1:100,2:100};
+var csel_hSV=165, csel_wSV=162, csel_hH=163, csel_slideHSV={0:360,1:100,2:100}, csel_zINDEX=15, csel_stop=1;
+
+function csel_use(){
+	var c = document.getElementById("csel_plugHEX").innerHTML;
+	window.opener.document.getElementById("type_color").value = c;
+	window.opener.document.getElementById("type_color_preview").style.backgroundColor = "#"+c;
+	window.close();
+}
+
+function csel_HSVslide(d,o,e) {
+	function tXY(e) { tY=csel_XY(e,1)-top; tX=csel_XY(e)-left; }
+	function mkHSV(a,b,c) { return(Math.min(a,Math.max(0,Math.ceil((parseInt(c)/b)*a)))); }
+	function ckHSV(a,b) { if(csel_within(a,0,b)) return(a); else if(a>b) return(b); else if(a<0) return('-'+oo); }
+	function drag(e) { 
+		if(!csel_stop) { 
+			if(d!='drag') tXY(e);
+			if(d=='csel_SVslide') { ds.left=ckHSV(tX-oo,csel_wSV)+'px'; ds.top=ckHSV(tY-oo,csel_wSV)+'px';
+				csel_slideHSV[1]=mkHSV(100,csel_wSV,ds.left); csel_slideHSV[2]=100-mkHSV(100,csel_wSV,ds.top); csel_HSVupdate();
+			}
+			else if(d=='csel_Hslide') { var ck=ckHSV(tY-oo,csel_hH), j, r='hsv', z={};
+				ds.top=(ck-5)+'px'; csel_slideHSV[0]=mkHSV(360,csel_hH,ck);
+	 			for(var i=0; i<=r.length-1; i++) { j=r.substr(i,1); z[i]=(j=='h')?csel_maxValue[j]-mkHSV(csel_maxValue[j],csel_hH,ck):csel_HSV[i]; }
+				csel_HSVupdate(z); csel_S('csel_SV').backgroundColor='#'+csel_hsv2hex([csel_HSV[0],100,100]);
+			}
+			else if(d=='drag') { ds.left=csel_XY(e)+oX-eX+'px'; ds.top=csel_XY(e,1)+oY-eY+'px'; }
+		}
+	}
+	if(csel_stop) { 
+		csel_stop=''; 
+		var ds=csel_S(d!='drag'?d:o);
+		if(d=='drag') { 
+			var oX=parseInt(ds.left), oY=parseInt(ds.top), eX=csel_XY(e), eY=csel_XY(e,1); 
+			csel_S(o).zIndex=csel_zINDEX++; 
+		}else { 
+			var left=(csel_g(o).offsetLeft+10), top=(csel_g(o).offsetTop+22), tX, tY, oo=(d=='csel_Hslide')?2:4; 
+			if(d=='csel_SVslide') csel_slideHSV[0]=csel_HSV[0]; 
+		}
+		document.onmousemove=drag; 
+		document.onmouseup=function(){ csel_stop=1; document.onmousemove=''; document.onmouseup=''; }; 
+		drag(e);
+	}
+}
+
+// do stuff with the color that we have selected currently.
+// for instance, set the color in a box or in a field.
+function csel_HSVupdate(v) { v=csel_hsv2hex(csel_HSV=v?v:csel_slideHSV);
+	csel_g('csel_plugHEX').innerHTML=v;
+	csel_S('csel_plugCUR').background='#'+v;
+	//$S('plugID').background='#'+v;
+	return(v);
+}
+
+function csel_loadSV() { var z='';
+	for(var i=csel_hSV; i>=0; i--) z+="<div style=\"BACKGROUND: #"+csel_hsv2hex([Math.round((360/csel_hSV)*i),100,100])+";\"><br /><\/div>";
+	csel_g('csel_Hmodel').innerHTML=z;
+}
+
+/* CONVERSIONS */
+function csel_toHex(v) { v=Math.round(Math.min(Math.max(0,v),255)); return("0123456789ABCDEF".charAt((v-v%16)/16)+"0123456789ABCDEF".charAt(v%16)); }
+function csel_rgb2hex(r) { return(csel_toHex(r[0])+csel_toHex(r[1])+csel_toHex(r[2])); }
+function csel_hsv2hex(h) { return(csel_rgb2hex(csel_hsv2rgb(h))); }	
+
+function csel_hsv2rgb(r) { // easyrgb.com/math.php?MATH=M21#text21
+    var R,B,G,S=r[1]/100,V=r[2]/100,H=r[0]/360;
+	var F,A,C;
+    if(S>0) { if(H>=1) H=0;
+        H=6*H; F=H-Math.floor(H);
+        A=Math.round(255*V*(1.0-S));
+        B=Math.round(255*V*(1.0-(S*F)));
+        C=Math.round(255*V*(1.0-(S*(1.0-F))));
+        V=Math.round(255*V); 
+        switch(Math.floor(H)) {
+            case 0: R=V; G=C; B=A; break;
+            case 1: R=B; G=V; B=A; break;
+            case 2: R=A; G=V; B=C; break;
+            case 3: R=A; G=B; B=V; break;
+            case 4: R=C; G=A; B=V; break;
+            case 5: R=V; G=A; B=B; break;
+
+        }
+        return([R?R:0,G?G:0,B?B:0]);
+    }
+    else return([(V=Math.round(V*255)),V,V]);
+}
+
+/* LOAD */
+csel_loadSV();
+csel_S('csel_plugin').display='block';
+
+</script>
+
+</body>
+</html>

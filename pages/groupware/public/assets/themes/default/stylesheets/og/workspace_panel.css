@@ -1,0 +1,125 @@
+.ext-el-mask {
+	background:#dadadb;
+}
+.ico-workspace, .ico-ws, .ico-project {
+	background-image: url(../../images/16x16/workspace.png) !important;
+}
+.ico-workspaces {
+	background-image: url(../../images/16x16/workspace.png) !important;
+}
+.ico-workspace-add {
+	background-image: url(../../images/16x16/add.png) !important;
+}
+.ico-workspace-del {
+	background-image: url(../../images/16x16/del.png) !important;
+}
+.ico-workspace-edit {
+	background-image: url(../../images/16x16/properties.png) !important;
+}
+.ico-workspace-refresh {
+	background-image: url(../../images/16x16/refresh.png) !important;
+}
+.ico-color0, .ico-color1, .ico-color2, .ico-color3, .ico-color4, .ico-color5, .ico-color6, .ico-color7, .ico-color8, .ico-color9, .ico-color10, .ico-color11, .ico-color12, .ico-color13, .ico-color14, .ico-color15, .ico-color16, .ico-color17, .ico-color18, .ico-color19, .ico-color20, .ico-color21, .ico-color22, .ico-color23, .ico-color24 {
+	height: 16px;
+	background-image: none !important;
+}
+.ico-color0 {
+	background-image: url(../../images/16x16/wscolors/color0.png) !important;
+}
+.ico-color1 {
+	background-image: url(../../images/16x16/wscolors/color1.png) !important;
+}
+.ico-color2 {
+	background-image: url(../../images/16x16/wscolors/color2.png) !important;
+}
+.ico-color3 {
+	background-image: url(../../images/16x16/wscolors/color3.png) !important;
+}
+.ico-color4 {
+	background-image: url(../../images/16x16/wscolors/color4.png) !important;
+}
+.ico-color5 {
+	background-image: url(../../images/16x16/wscolors/color5.png) !important;
+}
+.ico-color6 {
+	background-image: url(../../images/16x16/wscolors/color6.png) !important;
+}
+.ico-color7 {
+	background-image: url(../../images/16x16/wscolors/color7.png) !important;
+}
+.ico-color8 {
+	background-image: url(../../images/16x16/wscolors/color8.png) !important;
+}
+.ico-color9 {
+	background-image: url(../../images/16x16/wscolors/color9.png) !important;
+}
+.ico-color10 {
+	background-image: url(../../images/16x16/wscolors/color10.png) !important;
+}
+.ico-color11 {
+	background-image: url(../../images/16x16/wscolors/color11.png) !important;
+}
+.ico-color12 {
+	background-image: url(../../images/16x16/wscolors/color12.png) !important;
+}
+.ico-color13 {
+	background-image: url(../../images/16x16/wscolors/color13.png) !important;
+}
+.ico-color14 {
+	background-image: url(../../images/16x16/wscolors/color14.png) !important;
+}
+.ico-color15 {
+	background-image: url(../../images/16x16/wscolors/color15.png) !important;
+}
+.ico-color16 {
+	background-image: url(../../images/16x16/wscolors/color16.png) !important;
+}
+.ico-color17 {
+	background-image: url(../../images/16x16/wscolors/color17.png) !important;
+}
+.ico-color18 {
+	background-image: url(../../images/16x16/wscolors/color18.png) !important;
+}
+.ico-color19 {
+	background-image: url(../../images/16x16/wscolors/color19.png) !important;
+}
+.ico-color20 {
+	background-image: url(../../images/16x16/wscolors/color20.png) !important;
+}
+.ico-color21 {
+	background-image: url(../../images/16x16/wscolors/color21.png) !important;
+}
+.ico-color22 {
+	background-image: url(../../images/16x16/wscolors/color22.png) !important;
+}
+.ico-color23 {
+	background-image: url(../../images/16x16/wscolors/color23.png) !important;
+}
+.ico-color24 {
+	background-image: url(../../images/16x16/wscolors/color24.png) !important;
+}
+
+
+
+
+
+
+.x-tree {
+	background:#fff !important;
+}
+.workspace-item {
+	border:1px solid #fff;
+	margin:3px;
+}
+.workspace-item .x-tree-ec-icon {
+	display:none;
+}
+.x-tree-selected {
+	border:1px dotted #a3bae9;
+	background:#DFE8F6;
+}
+.x-tree-node .x-tree-selected a span{
+	background:transparent;
+	color:#15428b;
+	font-weight:bold;
+}

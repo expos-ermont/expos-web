@@ -1,0 +1,12 @@
+<?php echo lang('hi john doe', $user->getDisplayName()) ?>,<?php echo "\r\n"
+?><?php echo "\r\n"
+?><?php echo lang('user password reseted desc', owner_company()->getName(), ROOT_URL) ?><?php echo "\r\n"
+?><?php echo "\r\n"
+?><?php echo lang('user password reseted username', $user->getUsername()) ?><?php echo "\r\n"
+?><?php echo "\r\n"
+?><?php echo lang('user password reseted password', $new_password) ?><?php echo "\r\n"
+?><?php echo "\r\n"
+?><?php echo "\r\n"
+?>--<?php echo "\r\n"
+?><?php echo ROOT_URL ?><?php echo "\r\n\r\n\r\n"
+?> 

@@ -1,0 +1,17 @@
+<?php return array(
+	'custom' => 'Personalizzato',
+	'custom reports' => 'Rapporto personalizzato',
+	'no custom reports' => 'Non ci sono rapporti personalizzati',
+	'add custom report' => 'Aggiungi un rapporto personalizzato',
+	'edit custom report' => 'Modifica rapporto personalizzato',
+	'new custom report' => 'Nuovo rapporto personalizzato',
+	'add report' => 'Aggiungi rapporto',
+	'object type' => 'Tipo oggetto',
+	'add condition' => 'Aggiungi condizione',
+	'custom report created' => 'Rapporto personalizzato creato',
+	'custom report updated' => 'Rapporto personalizzato aggiornato',
+	'conditions' => 'Condizioni',
+	'columns and order' => 'Colonne e ordine',
+	'true' => 'Vero',
+	'false' => 'Falso',
+); ?>

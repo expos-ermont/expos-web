@@ -1,0 +1,353 @@
+* {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
+body {
+	text-align: center;
+	background: #a9a9a9 url(../picts/body_background2.png) repeat-x fixed;
+}
+
+h2, h3 {margin-top: 2em;}
+h2 {font-size: 1.3em;}
+
+p {margin: 1em 0 1em 0;}
+
+a {color: #F6A800;}
+a:hover,a:visited {color: #666666;}
+a:hover {text-decoration: none;}
+a img {border: 1px solid #666666; padding: 2px;}
+a:hover img {border-color: #333333;}
+a.button {padding: 3px;}
+
+form button, a.button {background-image: url(../picts/button_background.png); color: #333333; border: 1px solid #999999; height: 25px; margin-top: 5px; text-decoration: none;}
+form button:hover, a.button:hover {border-color: #666666;}
+form button:active, a.button:active {background-image: url(../picts/button_background_hover.png);}
+form input, form textarea , form select {border: 1px solid #999999; margin: 3px 0px 3px 0px; padding: 2px;}
+td, th {padding: 3px;}
+
+div#page {
+	width: 800px;
+	margin: auto;
+	text-align: left;
+}
+
+/*****************************************************************************
+ * Header styles
+ ****************************************************************************/
+
+div#page div#top h1 {
+	height: 180px;
+	background-image: url(../picts/top_background.png);
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+
+div#page div#top h1 img {
+	margin-top: 20px;
+	margin-left: 25px;
+	border: 0;
+}
+
+div#page div#top ul {
+	float: left;
+	padding-left: 15px;
+	margin-top: 1px;
+	list-style: none;
+}
+
+div#page div#top ul li {
+	float: left;
+	line-height: 42px;
+	margin-right: 10px;
+	position: relative;
+}
+
+div#page div#top a {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+div#page div#top ul li:hover a, div#page div#top ul li a:hover {
+	display: block;
+	background-color: white;
+	color: #F6A800;
+}
+
+div#page div#top ul li ul {
+	position: absolute;
+	left: 0px;
+	top: 41px;
+	display: none;
+	padding: 0;
+	border-width: 0 4px 4px 4px;
+	border-color: #ffffff;
+	border-style: solid;
+	background-color: #F6A800;
+}
+
+div#page div#top ul li:hover ul {display: block;}
+
+div#page div#top ul li:hover ul li {
+	float: none; 
+	margin: 3px;
+	line-height: 1.3em;
+}
+
+div#page div#top ul li:hover ul li a {
+	background-color: #F6A800;
+	color: #ffffff;
+}
+
+div#page div#top ul li:hover ul li:hover a, div#page div#top ul li:hover ul li a:hover {
+	background-color: white;
+	color: #F6A800;
+}
+
+div#page div#top div#usrBox {
+	display: block;
+	text-align: right;
+	margin-bottom: 15px;
+	padding-right: 10px;
+	background-image: url(../picts/menu_background.png);
+	background-repeat: repeat-x;
+	line-height: 44px;
+	white-space: nowrap;
+}
+
+div#page div#top div#usrBox a {text-transform: none;}
+div#page div#top div#usrBox a * {vertical-align: middle;}
+div#page div#top div#usrBox ul {float: right;}
+div#page div#top div#usrBox ul li ul {right: 0;}
+
+div#page div#top .banner {margin-bottom: 15px;}
+
+/*****************************************************************************
+ * Main content styles
+ ****************************************************************************/
+
+div#page div#content {
+	float: left;
+	width: 565px;
+	padding: 10px;
+	background-color: #ffffff;
+	background-image: url(../picts/content_top_background.png);
+	background-repeat: no-repeat;
+}
+
+div#page div#content h2 {
+	display: block;
+	border-bottom: 1px solid black;
+	margin-bottom: 3px;
+}
+
+div#page div#content ul {margin-left: 10px;}
+
+div#page div#content table {
+	border: 1px solid #cccccc;
+	border-collapse: collapse;
+}
+div#page div#content table td {border: 1px solid black;}
+
+div#page div#content form fieldset, div#page div#content form fieldset legend {border: 1px solid #cccccc; padding: 3px;}
+div#page div#content form.loginForm {display: inline-block; width: 100%; vertical-align: top;}
+div#page div#content form fieldset legend {margin-left: 3px; background-color: #eeeeee;}
+div#page div#content form fieldset label {margin-right: 1em;}
+div#page div#content form.loginForm fieldset label {display: none;}
+div#page div#content form.loginForm input {height: 18px; padding: 1px 1px 0 18px; margin: 5px 0 0 0;}
+div#page div#content form.loginForm input#user {background: #ffffff url(../picts/user.png) no-repeat scroll 1px 1px;}
+div#page div#content form.loginForm input#pass {background: #ffffff url(../picts/key.png) no-repeat scroll 1px 1px;}
+div#page div#content form.loginForm input#mail {background: #ffffff url(../picts/email.png) no-repeat scroll 1px 1px;}
+
+div#page div#content div.indexHalfBox {
+	display: inline-block;
+	width: 280px;
+	vertical-align: top;
+}
+
+div#page div#content div.actu.promote {
+	background-color: #FACB66;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3px;
+}
+
+div#page div#content div.actu {
+	margin-bottom: 20px;
+	clear: left;
+}
+
+div#page div#content div.actu h2 {
+	float: left;
+	text-transform: uppercase;
+	font-size: 1em;
+	border: 0;
+	margin: 0;
+}
+
+div#page div#content div.actu h2 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+div#page div#content div.actu span.date {
+	display: block;
+	text-align: right;
+	border-bottom: 1px solid black;
+	margin-bottom: 5px;
+	padding-top: 0.3em;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+div#page div#content div.actu img.illu {
+	float: right;
+	margin-top: -2em;
+	/*margin-right: 3px;
+	margin-bottom: 3px;*/
+}
+
+div#page div#content a.goToc {float: right;}
+
+div#page div#content table.listing {
+	border: 1px solid #333333;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+div#page div#content table.listing * {padding: 1px;}
+div#page div#content table.listing td {border: 0; border-bottom: 1px solid #333333;}
+
+div#page div#content div.indexHalfBox {
+	width: 270px;
+	border: 2px solid #F6A800;
+	padding: 3px;
+}
+
+div#page div#content div.indexHalfBox h2 {
+	background-color: #F6A800;
+	color: white;
+	margin: -3px;
+	border: 0;
+}
+div#page div#content div.indexHalfBox h3 {margin: 0;}
+
+/*****************************************************************************
+ * Right panel styles
+ ****************************************************************************/
+
+div#page div#right {
+	float: right;
+	width: 180px;
+	padding: 10px;
+	background-color: #ffffff;
+	background-image: url(../picts/right_top_background.png);
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+div#page div#right table {margin: auto;}
+
+div#page div#right div#endRight {
+	margin: 0px -10px -10px -10px;
+	background-image: url(../picts/right_bottom_background.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+div#page div#right table.results {
+	width: 180px;
+	border-collapse: collapse;
+	background-image: url(../picts/result_table_bottom_background.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+
+div#page div#right table.results tr.last td {padding-bottom: 5px;}
+
+div#page div#right table.results caption {
+	background: #F7A800 url(../picts/result_table_top_background.png) no-repeat left top;
+	color: #ffffff;
+	line-height: 2em;
+}
+
+/*****************************************************************************
+ * Footer styles
+ ****************************************************************************/
+
+div#page div#bottom {
+	clear: both;
+	padding-top: 15px;
+	text-align: center;
+}
+
+div#page div#content div#endContent {
+	margin: 0px -10px -10px -10px;
+	background-image: url(../picts/content_bottom_background.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 30px;
+}
+
+/*****************************************************************************
+ * Common classes
+ ****************************************************************************/
+
+p.rail {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.error, div.success, div.info {
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px;
+	margin: 3px 0 3px 0;
+	text-indent: 21px;
+}
+
+div.error {
+	border-color: #DF0000;
+	background: #FF9F9F url(../picts/error.png) no-repeat scroll 3px 3px;
+}
+
+div.success {
+	border-color: #00DF00;
+	background: #9FFF9F url(../picts/accept.png) no-repeat scroll 3px 3px; 
+}
+
+div.info {
+	border-color: #0000DF;
+	background: #AFBDFF url(../picts/information.png) no-repeat scroll 3px 3px; 
+}
+
+a.markupIcon {margin: 2px 2px 2px 0;}
+
+td.alignTop {vertical-align: top;}
+td.icon {width: 16px;}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.visible {
+	display: block;
+	visibility: visible;
+}
+
+.alignRight {text-align: right;}
+.alignCenter {text-align: center;}
+.bgLightGray {background-color: #eeeeee;}
+.bgMediumGray {background-color: #bbbbbb;}
+.bgDarkGray {background-color: #666666;}
+.noBorder, table.noBorder td {border: 0 !important;}
+.noWrap {white-space: nowrap;}
+.fullWidth {width: 100%;}
+.displayBlock {display: block;}
