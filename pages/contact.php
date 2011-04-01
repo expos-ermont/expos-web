@@ -26,9 +26,9 @@ $content = '
 		<li>Séniors 1 : Florent Captier & Alexandre Soulier</li>
 		<li>Séniors 2 : Eric Faivre & Brice Lardereau</li>
 		<li>Séniors 3 : Régis Minfray</li>
-		<li>Softball : Benoit Hermel & Jean-François Fleury</li>
+		<li>Softball : Camilla English & Benoit Hermel</li>
 		<li>Cadet: Régis Minfray</li>
-		<li>Minimes : Camilla English & Thomas Messager</li>
+		<li>Minimes : Thomas Messager & Thomas Gicquel</li>
 	</ul>
 	
 	<h2>Les entraineurs</h2>
@@ -36,9 +36,9 @@ $content = '
 		<li>Séniors 1 : Stanislas Klener (06 15 87 62 18)</li>
 		<li>Séniors 2 : Régis Minfray & Stanislas Klenner</li>
 		<li>Séniors 3 : Régis Minfray (06 12 52 46 28)</li>
-		<li>Softball : Benoit Hermel (06 99 01 27 27)</li>
+		<li>Softball : Camilla English (06 72 24 87 89)</li>
 		<li>Cadets : Régis Minfray & Stanislas Klenner</li>
-		<li>Minimes : Camilla English (06 72 24 87 89) & Thomas Messager (06 01 96 82 12)</li>
+		<li>Minimes : Thomas Messager (06 01 96 82 12)</li>
 	</ul>
 	
 	<h2>Le responsable web</h2>

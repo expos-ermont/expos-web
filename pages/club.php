@@ -19,31 +19,26 @@ $content = '
 	<table class="fullWidth">
 		<tr>
 			<th>Catégorie</th>
-			<th>Tarifs 2009/2010</th>
+			<th>
+				Tarifs 2010/2011<br />
+				(Cotisation club + License fédérale)
+			</th>
 		</tr>
 		<tr>
 			<td>Senior</td>
-			<td>150,00€</td>
+			<td><b>160,00€</b> (115€ + 45€)</td>
 		</tr>
 		<tr>
 			<td>Etudiant (avec photocopie de la carte étudiant)</td>
-			<td>125,00€</td>
+			<td><b>135,00€</b> (90€ + 45€)</td>
 		</tr>
 		<tr>
 			<td>Feminin senior</td>
-			<td>80,00€</td>
+			<td><b>135,00€</b> (90€ + 45€)</td>
 		</tr>
 		<tr>
 			<td>&lt;1992</td>
-			<td>125,00€</td>
-		</tr>
-		<tr>
-			<td>Simple dirigeant</td>
-			<td>30,00€</td>
-		</tr>
-		<tr>
-			<td>Simple officiel</td>
-			<td>30,00€</td>
+			<td><b>135,00€</b> (105€ + 30€)</td>
 		</tr>
 		<tr>
 			<td>Famille nombreuse</td>
@@ -51,7 +46,7 @@ $content = '
 		</tr>
 	</table>
 
-	N.B.: les tarifs annoncés intègrent la licence pour la saison 2009/2010 et l\'assurance sportive. Cette dernière peut être remboursée sur demande. L\'assureur fédéral propose également une assurance complémentaire (se renseigner auprès des responsables du club).<br />
+	N.B.: les tarifs annoncés intègrent la licence pour la saison 2010/2011 et l\'assurance sportive. Cette dernière peut être remboursée sur demande. L\'assureur fédéral propose également une assurance complémentaire (se renseigner auprès des responsables du club).<br />
 	Règlement en espèces ou par chèque à l\'ordre des Expos d\'Ermont, possibilité de payer en 3 fois.<br />
 	<h3>Pièces à fournir</h3> 
 	Le dossier d\'inscription rempli,<br /> 
@@ -62,10 +57,73 @@ $content = '
 	PAS DE COQUILLE = PAS D\'ENTRAINEMENT = PAS DE MATCH<br />
 	Le club met des gants à votre disposition pendant les entrainements et les matchs. Vous pouvez aussi consulter nos différents catalogues de vente par correspondance<br />
 	<br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2009-2010.pdf" title="Dossier inscription 2009/2010" target="_blank">Dossier d\'incription</a><br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2009-2010.pdf" title="Dossier renseignement 2009/2010" target="_blank">Dossier de renseignement</a><br />
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2010-2011.pdf" title="Dossier inscription 2010/2011" target="_blank">Dossier d\'incription</a><br /> 
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2010-2011.pdf" title="Dossier renseignement 2010/2011" target="_blank">Dossier de renseignement</a><br />
 	<a href="'.$_CONF['wwwRoot'].'data/manuel_baseball.pdf" title="Manuel de baseball" target="_blank">Manuel sur le baseball</a>
 		
+	<h2 id="sections">Les sections</h2>
+	<table class="fullWidth">
+		<tr>
+			<th>Catégorie</th>
+			<th>Année de naissance</th>
+			<th>Horaires d\'entrainement</th>
+		</tr>
+		<tr>
+			<td>Benjamins</td>
+			<td>
+				2003<br />
+				2002<br />
+				2001
+			</td>
+			<td>
+				Mercredi de 14h à 15h30<br />
+				Samedi de 14h à 16h *
+			</td>
+		</tr>
+		<tr>
+			<td>Minimes</td>
+			<td>
+				2000<br />
+				1999<br />
+				1998
+			</td>
+			<td>
+				Mercredi de 14h à 15h30<br />
+				Samedi de 14h à 16h *
+			</td>
+		</tr>
+		<tr>
+			<td>Cadets</td>
+			<td>
+				1997<br />
+				1996<br />
+				1995
+			</td>
+			<td>
+				Mercredi de 15h30 à 17h<br />
+				Jeudi de 18h30 à 20h<br />
+				Samedi de 14h à 16h *
+			</td>
+		</tr>
+		<tr>
+			<td>Juniors-Séniors</td>
+			<td>à partir de 1994</td>
+			<td>
+				Mardi de 20h à 22h<br />
+				Jeudi de 20h à 22h
+			</td>
+		</tr>
+		<tr>
+			<td>Softball (mixte)</td>
+			<td>tous âges</td>
+			<td>
+				Mercredi de 20h à 22h<br />
+				Samedi de 14h30 à 16h30
+			</td>
+		</tr>
+	</table>
+	<p>(*) Les horaires du samedi sont susceptibles de changer selon le nombre d\'adhérents et des jours de matchs.</p>
+	
 	<h2 id="adresses">Les bonnes adresses</h2>
 	<ul>
 		<li>Siege Social: Service des sports de la mairie d\'ermont, 100 rue Louis Savoie, 95120 Ermont</li>

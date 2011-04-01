@@ -21,7 +21,7 @@ if(isset($_SERVER['WINDIR'])) {
 $_CONF['title']       = 'Expos Ermont Baseball/Softball club';
 $_CONF['keywords']    = 'baseball,softball,animations sportives,sport,balle,batte,american sport,sport americain,expos,ermont,sport ermont,baseball ermont,ermont baseball,baseball france,baseball val d\'oise,baseball ile de france,baseball 95';
 $_CONF['description'] = 'Le site officiel du club de baseball et softball des Expos d\'Ermont (Val d\'Oise), retouvez les équipes, les resultats, les actualités et les informations du club';
-$_CONF['wwwRoot']     = 'http://localhost/~florent/exposerm/';
+$_CONF['wwwRoot']     = 'http://nas.captier.local/exposerm/';
 $_CONF['root']        = preg_replace('/[^\\'.DIR_SEP.']+$/' , '' , dirname(__FILE__));
 $_CONF['libRoot']     = $_CONF['root'].'lib'.DIR_SEP;
 

@@ -1,0 +1,13 @@
+syntax= glob
+
+.DS_Store
+.buildpath
+.project
+.settings
+
+data/*
+picts/photos/*
+picts/banners/*
+picts/actus/*
+picts/Boutique/*
+picts/teams/*
