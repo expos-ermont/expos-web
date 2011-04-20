@@ -1,4 +1,6 @@
 <?php
+require_once('Spyc/spyc.php');
+
 $yaml_file = $_CONF['root'].'/pages/_results.yaml';
 
 $results = 	Spyc::YAMLLoad($yaml_file);

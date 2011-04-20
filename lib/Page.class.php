@@ -79,6 +79,7 @@ class Page {
 			'pages/admin/pages_list.php' => 'Pages',
 			'pages/admin/users_list.php' => 'Utilisateurs',
 			'pages/admin/teams_list.php' => 'Equipes',
+			'pages/admin/results.php' => 'Résultats',
 			'pages/user/infos_edit.php' => 'Mes infos'
 		);
 		
