@@ -2,6 +2,15 @@
 require_once('config.inc.php');
 
 class Db extends mysqli {
+	
+	/**
+	 * Construct a new DB connection
+	 * 
+	 * Connection parameters are defined in the configuration file
+	 * 
+	 * @param string $base OPTIONAL - Name of the database you want to connect to
+	 * @return mysqli MySQLi object instance
+	 */
 	public function __construct($base = 'exposerm') {
 		global $_CONF;
 		parent::__construct($_CONF['db']['host'] , $_CONF['db']['user'] , $_CONF['db']['pass'] , $base , $_CONF['db']['port']);

@@ -9,40 +9,24 @@
 header('Content-Type: text/xml');
 
 require_once('../lib/config.inc.php');
-require_once('Page.class.php');
-require_once('Db.class.php');
+require_once('Actu.class.php');
 
-$db = new Db();
+
 $actus = '';
-$query = '
-	SELECT 
-		id_actu,
-		title,
-		CONCAT(prenom," ",nom) AS auteur,
-		content,
-		UNIX_TIMESTAMP(time) as time,
-		c.name AS cat_name
-	FROM 
-		actus a
-		JOIN users u ON u.id_user = a.id_author
-		LEFT JOIN categories c USING(id_category)
-	ORDER BY time DESC
-';
-$result = $db->query($query);
-while($data = $result->fetch_array()) {
+
+foreach(Actu::getLimitedSet(100) as $actu) {
 	$actus .= '
 		<item>
-			<title>'.$data['title'].'</title>
-			<link>'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($data['title'] , MB_CASE_UPPER , 'UTF-8'))).'_'.$data['id_actu'].'.html</link>
-			<guid>'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($data['title'] , MB_CASE_UPPER , 'UTF-8'))).'_'.$data['id_actu'].'.html</guid>
-			<pubDate>'.date('r' , $data['time']).'</pubDate>
-			<description><![CDATA['.normalizeToHTML($data['content']).']]></description>
-			<author>'.$data['auteur'].'</author>
-			<category>'.$data['cat_name'].'</category>      
+			<title>'.htmlentities($actu->getTitle()).'</title>
+			<link>'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle() , MB_CASE_UPPER , 'UTF-8'))).'_'.$actu->getId().'.html</link>
+			<guid>'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle() , MB_CASE_UPPER , 'UTF-8'))).'_'.$actu->getId().'.html</guid>
+			<pubDate>'.date('r' , $actu->getUnixTime()).'</pubDate>
+			<description><![CDATA['.normalizeToHTML($actu->getContent()).']]></description>
+			<author>'.$actu->getAuthor().'</author>
+			<category>'.$actu->getCategory().'</category>      
 		</item>
 	';
 }
-$db->close();
 
 echo '<?xml version="1.0" encoding="utf-8"?>
 	<rss version="2.0">
