@@ -5,6 +5,8 @@ syntax= glob
 .project
 .settings
 
+@eaDir*
+
 data/*
 picts/photos/*
 picts/banners/*
