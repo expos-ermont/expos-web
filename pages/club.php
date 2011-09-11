@@ -20,7 +20,7 @@ $content = '
 		<tr>
 			<th>Catégorie</th>
 			<th>
-				Tarifs 2010/2011<br />
+				Tarifs 2011/2012<br />
 				(Cotisation club + License fédérale)
 			</th>
 		</tr>
@@ -37,7 +37,7 @@ $content = '
 			<td><b>135,00€</b> (90€ + 45€)</td>
 		</tr>
 		<tr>
-			<td>&lt;1992</td>
+			<td>&lt;1996</td>
 			<td><b>135,00€</b> (105€ + 30€)</td>
 		</tr>
 		<tr>
@@ -57,8 +57,8 @@ $content = '
 	PAS DE COQUILLE = PAS D\'ENTRAINEMENT = PAS DE MATCH<br />
 	Le club met des gants à votre disposition pendant les entrainements et les matchs. Vous pouvez aussi consulter nos différents catalogues de vente par correspondance<br />
 	<br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2010-2011.pdf" title="Dossier inscription 2010/2011" target="_blank">Dossier d\'incription</a><br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2010-2011.pdf" title="Dossier renseignement 2010/2011" target="_blank">Dossier de renseignement</a><br />
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2011-2012.pdf" title="Dossier inscription 2011/2012" target="_blank">Dossier d\'incription</a><br /> 
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2011-2012.pdf" title="Dossier renseignement 2011/2012" target="_blank">Dossier de renseignement</a><br />
 	<a href="'.$_CONF['wwwRoot'].'data/manuel_baseball.pdf" title="Manuel de baseball" target="_blank">Manuel sur le baseball</a>
 		
 	<h2 id="sections">Les sections</h2>
@@ -71,43 +71,41 @@ $content = '
 		<tr>
 			<td>Benjamins</td>
 			<td>
-				2003<br />
-				2002<br />
-				2001
+				2005<br />
+				2004<br />
+				2003
 			</td>
 			<td>
-				Mercredi de 14h à 15h30<br />
 				Samedi de 14h à 16h *
 			</td>
 		</tr>
 		<tr>
 			<td>Minimes</td>
 			<td>
-				2000<br />
-				1999<br />
-				1998
+				2002<br />
+				2001<br />
+				2000
 			</td>
 			<td>
-				Mercredi de 14h à 15h30<br />
+				Jeudi de 18h à 19h30<br />
 				Samedi de 14h à 16h *
 			</td>
 		</tr>
 		<tr>
 			<td>Cadets</td>
 			<td>
-				1997<br />
-				1996<br />
-				1995
+				1999<br />
+				1998<br />
+				1997
 			</td>
 			<td>
-				Mercredi de 15h30 à 17h<br />
-				Jeudi de 18h30 à 20h<br />
+				Jeudi de 18h à 19h30<br />
 				Samedi de 14h à 16h *
 			</td>
 		</tr>
 		<tr>
 			<td>Juniors-Séniors</td>
-			<td>à partir de 1994</td>
+			<td>à partir de 1996</td>
 			<td>
 				Mardi de 20h à 22h<br />
 				Jeudi de 20h à 22h
@@ -118,7 +116,7 @@ $content = '
 			<td>tous âges</td>
 			<td>
 				Mercredi de 20h à 22h<br />
-				Samedi de 14h30 à 16h30
+				Samedi de 15h à 17h (loisir)
 			</td>
 		</tr>
 	</table>
@@ -128,7 +126,7 @@ $content = '
 	<ul>
 		<li>Siege Social: Service des sports de la mairie d\'ermont, 100 rue Louis Savoie, 95120 Ermont</li>
 		<li>Terrain: Complexe Sportif Gaston Rebuffat, 1 rue Jean de Florette, 95120 Ermont</li>
-		<li>Gymnase Senior: CDFAS, 106 rue de Bussy, 95600 Eaubonne</li>
+		<li>Gymnase Senior: CDFAS, 64 rue des Bouquinvilles, 95600 Eaubonne</li>
 		<li>Gymnase Jeune: Guerin Drouet, 37 bis rue Maurice Berteaux, 95120 Ermont</li>
 	</ul>
 	<!--Complexe Gaston Rebuffat<br />
