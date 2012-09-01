@@ -22,7 +22,7 @@ $content = '
 	</ul>
 	<h2>Les responsables d\'équipes</h2>
 	<ul>
-		<li>Séniors 1: Florent Captier (06 80 24 21 26) & Stanislas Klener (06 16 54 78 00)</li>
+		<li>Séniors 1: Florent Captier (06 80 24 21 26) & Stanislas Klenner (06 15 87 62 18)</li>
 		<li>Séniors 2: Romain Odic (06 07 70 23 02) & Soulier Jeremie (06 19 99 52 98)</li>
 		<li>Séniors 3: Regis Minfray (06 12 52 46 28) & Eric Faivre (06 80 88 52 82)</li>
 		<li>Softball: Camilla English (06 72 24 87 89) & Benoit Hermel (06 99 01 27 27)</li>
@@ -33,7 +33,7 @@ $content = '
 	
 	<h2>Les entraineurs</h2>
 	<ul>
-		<li>Séniors 1 : Stanislas Klener (06 15 87 62 18)</li>
+		<li>Séniors 1 : Stanislas Klenner (06 15 87 62 18)</li>
 		<li>Séniors 2 : Romain Odic (06 07 70 23 02)</li>
 		<li>Séniors 3 : Régis Minfray (06 12 52 46 28)</li>
 		<li>Softball : Camilla English (06 72 24 87 89)</li>
