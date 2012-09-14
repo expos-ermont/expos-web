@@ -20,7 +20,7 @@ $content = '
 		<tr>
 			<th>Catégorie</th>
 			<th>
-				Tarifs 2011/2012<br />
+				Tarifs 2012/2013<br />
 				(Cotisation club + License fédérale)
 			</th>
 		</tr>
@@ -37,7 +37,7 @@ $content = '
 			<td><b>135,00€</b> (90€ + 45€)</td>
 		</tr>
 		<tr>
-			<td>&lt;1996</td>
+			<td>&lt;1997</td>
 			<td><b>135,00€</b> (105€ + 30€)</td>
 		</tr>
 		<tr>
@@ -46,7 +46,7 @@ $content = '
 		</tr>
 	</table>
 
-	N.B.: les tarifs annoncés intègrent la licence pour la saison 2010/2011 et l\'assurance sportive. Cette dernière peut être remboursée sur demande. L\'assureur fédéral propose également une assurance complémentaire (se renseigner auprès des responsables du club).<br />
+	N.B.: les tarifs annoncés intègrent la licence pour la saison 2012/2013 et l\'assurance sportive. Cette dernière peut être remboursée sur demande. L\'assureur fédéral propose également une assurance complémentaire (se renseigner auprès des responsables du club).<br />
 	Règlement en espèces ou par chèque à l\'ordre des Expos d\'Ermont, possibilité de payer en 3 fois.<br />
 	<h3>Pièces à fournir</h3> 
 	Le dossier d\'inscription rempli,<br /> 
@@ -57,8 +57,8 @@ $content = '
 	PAS DE COQUILLE = PAS D\'ENTRAINEMENT = PAS DE MATCH<br />
 	Le club met des gants à votre disposition pendant les entrainements et les matchs. Vous pouvez aussi consulter nos différents catalogues de vente par correspondance<br />
 	<br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2011-2012.pdf" title="Dossier inscription 2011/2012" target="_blank">Dossier d\'incription</a><br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2011-2012.pdf" title="Dossier renseignement 2011/2012" target="_blank">Dossier de renseignement</a><br />
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2012-2013.pdf" title="Dossier inscription 2012/2013" target="_blank">Dossier d\'incription</a><br /> 
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2012-2013.pdf" title="Dossier renseignement 2012/2013" target="_blank">Dossier de renseignement</a><br />
 	<a href="'.$_CONF['wwwRoot'].'data/manuel_baseball.pdf" title="Manuel de baseball" target="_blank">Manuel sur le baseball</a>
 		
 	<h2 id="sections">Les sections</h2>
@@ -71,41 +71,42 @@ $content = '
 		<tr>
 			<td>Benjamins</td>
 			<td>
+				2006<br />
 				2005<br />
-				2004<br />
-				2003
+				2004
 			</td>
 			<td>
+				Mercredi 14h30 à 16h30<br />
 				Samedi de 14h à 16h *
 			</td>
 		</tr>
 		<tr>
 			<td>Minimes</td>
 			<td>
+				2003<br />
 				2002<br />
-				2001<br />
-				2000
+				2001
 			</td>
 			<td>
-				Jeudi de 18h à 19h30<br />
+				Mercredi 14h30 à 16h30<br />
 				Samedi de 14h à 16h *
 			</td>
 		</tr>
 		<tr>
 			<td>Cadets</td>
 			<td>
+				2000<br />
 				1999<br />
-				1998<br />
-				1997
+				1998
 			</td>
 			<td>
-				Jeudi de 18h à 19h30<br />
+				Mercredi 14h30 à 16h30<br />
 				Samedi de 14h à 16h *
 			</td>
 		</tr>
 		<tr>
 			<td>Juniors-Séniors</td>
-			<td>à partir de 1996</td>
+			<td>à partir de 1997</td>
 			<td>
 				Mardi de 20h à 22h<br />
 				Jeudi de 20h à 22h
