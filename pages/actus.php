@@ -45,15 +45,15 @@ foreach($actus as $actu) {
 		$image = '<img src="'.$image.'" alt="" class="illu" />';	
 	}
 	
-	$classPromote = ($actu->isPromoted()) ? ' promote' : '';
+	$classPromote = ($actu->isPromoted()) ? 'promote' : '';
 	$content .= '
-		<div class="actu'.$classPromote.'">
-			<h2><a href="'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle(), MB_CASE_UPPER, 'UTF-8'))).'_'.$actu->getId().'.html" title="'.normalizeToHTML($actu->getTitle()).'">'.normalizeToHTML($actu->getTitle()).'</a></h2>
-			<span class="date">le '.normalizeToHTML($actu->getDate()).' à '.normalizeToHTML($actu->getTime()).'</span>
-			par '.$actu->getAuthor().' - '.$actu->getCategory().'<br />
+		<div class="actu hentry '.$classPromote.'">
+			<h2 class="entry-title"><a href="'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle(), MB_CASE_UPPER, 'UTF-8'))).'_'.$actu->getId().'.html" title="'.normalizeToHTML($actu->getTitle()).'">'.normalizeToHTML($actu->getTitle()).'</a></h2>
+			<span class="date published">le '.normalizeToHTML($actu->getDate()).'T'.normalizeToHTML($actu->getTime()).'</span>
+			par <span class="hcard fn">'.$actu->getAuthor().'</span> - '.$actu->getCategory().'<br />
 			<br />
 			'.$image.'
-			'.normalizeToHTML($actu->getContent()).'
+			<div class="entry-content">'.normalizeToHTML($actu->getContent()).'</div>
 			'.$controls.'
 		</div>
 	';
