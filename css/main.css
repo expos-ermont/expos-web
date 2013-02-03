@@ -206,6 +206,10 @@ div#page div#content div.actu span.date {
 	text-transform: uppercase;
 }
 
+div#page div#content div.actu span.date * {
+	font-size: 1em;
+}
+
 div#page div#content div.actu img.illu {
 	float: right;
 	margin-top: -2em;
