@@ -11,13 +11,12 @@ header('Content-Type: text/xml');
 require_once('../lib/config.inc.php');
 require_once('Actu.class.php');
 
-
 $actus = '';
 
 foreach(Actu::getLimitedSet(100) as $actu) {
 	$actus .= '
 		<item>
-			<title>'.htmlentities($actu->getTitle()).'</title>
+			<title>'.str_replace('&', '&amp;', $actu->getTitle()).'</title>
 			<link>'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle() , MB_CASE_UPPER , 'UTF-8'))).'_'.$actu->getId().'.html</link>
 			<guid>'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle() , MB_CASE_UPPER , 'UTF-8'))).'_'.$actu->getId().'.html</guid>
 			<pubDate>'.date('r' , $actu->getUnixTime()).'</pubDate>
