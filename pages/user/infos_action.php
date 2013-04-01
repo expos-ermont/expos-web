@@ -44,7 +44,7 @@ $message = (empty($error)) ? 'Vos informations ont bien été enregistrées' : $
 
 $content = '
 	<div class="'.((empty($error)) ? 'success' : 'error').'">'.$message.'</div>
-	Cliquez <a href="infos_edit.php" title="Liste">ici</a> si vous n\'ètes pas redirigé automatiquement.
+	Cliquez <a href="pages/user/infos_edit.php" title="Liste">ici</a> si vous n\'ètes pas redirigé automatiquement.
 ';
 
 $_SESSION['user']->reload();

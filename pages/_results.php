@@ -36,9 +36,6 @@ foreach($results as $championship => $teams) {
 		';
 	}
 	$return .= '
-			<!--<tr class="last">
-				<td colspan="5">&nbsp;</td>
-			</tr>-->
 		</table><br />';
 }
 

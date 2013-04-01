@@ -78,7 +78,7 @@ switch($_GET['action']) {
 
 $content = '
 	'.$message.'<br /><br />
-	Cliquez <a href="pages_list.php" title="Liste">ici</a> si vous n\'êtes pas redirigé automatiquement.
+	Cliquez <a href="pages/admin/pages_list.php" title="Liste">ici</a> si vous n\'ï¿½tes pas redirigï¿½ automatiquement.
 ';
 
 header('Refresh: 3;url=pages_list.php');

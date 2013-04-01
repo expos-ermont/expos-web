@@ -8,7 +8,7 @@
 
 body {
 	text-align: center;
-	background: #a9a9a9 url(../picts/body_background2.png) repeat-x fixed;
+	background: #a9a9a9 url(../picts/body_background.png) repeat fixed;
 }
 
 h2, h3 {margin-top: 2em;}
@@ -39,34 +39,48 @@ div#page {
  * Header styles
  ****************************************************************************/
 
-div#page div#top h1 {
-	height: 180px;
+div#page header h1 {
+	height: 173px;
 	background-image: url(../picts/top_background.png);
 	background-repeat: no-repeat;
 	margin-bottom: 10px;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0px 0px 10px;
 }
 
-div#page div#top h1 img {
+div#page header h1 img {
 	margin-top: 20px;
 	margin-left: 25px;
 	border: 0;
 }
 
-div#page div#top ul {
+div#page header nav {
+	display: block;
+	text-align: right;
+	margin-bottom: 15px;
+	padding-right: 10px;
+	background-color: #F6A800;
+	border-radius: 10px;
+	border: 5px solid #ffffff;
+	box-shadow: 0px 0px 10px;
+	line-height: 42px;
+	white-space: nowrap;
+}
+
+div#page header ul {
 	float: left;
 	padding-left: 15px;
-	margin-top: 1px;
 	list-style: none;
 }
 
-div#page div#top ul li {
+div#page header ul li {
 	float: left;
 	line-height: 42px;
 	margin-right: 10px;
 	position: relative;
 }
 
-div#page div#top a {
+div#page header a {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -74,13 +88,13 @@ div#page div#top a {
 	font-size: 14px;
 }
 
-div#page div#top ul li:hover a, div#page div#top ul li a:hover {
+div#page header ul li:hover a, div#page header ul li a:hover {
 	display: block;
 	background-color: white;
 	color: #F6A800;
 }
 
-div#page div#top ul li ul {
+div#page header ul li ul {
 	position: absolute;
 	left: 0px;
 	top: 41px;
@@ -92,41 +106,30 @@ div#page div#top ul li ul {
 	background-color: #F6A800;
 }
 
-div#page div#top ul li:hover ul {display: block;}
+div#page header ul li:hover ul {display: block;}
 
-div#page div#top ul li:hover ul li {
+div#page header ul li:hover ul li {
 	float: none; 
 	margin: 3px;
 	line-height: 1.3em;
 }
 
-div#page div#top ul li:hover ul li a {
+div#page header ul li:hover ul li a {
 	background-color: #F6A800;
 	color: #ffffff;
 }
 
-div#page div#top ul li:hover ul li:hover a, div#page div#top ul li:hover ul li a:hover {
+div#page header ul li:hover ul li:hover a, div#page header ul li:hover ul li a:hover {
 	background-color: white;
 	color: #F6A800;
 }
 
-div#page div#top div#usrBox {
-	display: block;
-	text-align: right;
-	margin-bottom: 15px;
-	padding-right: 10px;
-	background-image: url(../picts/menu_background.png);
-	background-repeat: repeat-x;
-	line-height: 44px;
-	white-space: nowrap;
-}
+div#page header div#usrBox a {text-transform: none;}
+div#page header div#usrBox a * {vertical-align: middle;}
+div#page header div#usrBox ul {float: right;}
+div#page header div#usrBox ul li ul {right: 0;}
 
-div#page div#top div#usrBox a {text-transform: none;}
-div#page div#top div#usrBox a * {vertical-align: middle;}
-div#page div#top div#usrBox ul {float: right;}
-div#page div#top div#usrBox ul li ul {right: 0;}
-
-div#page div#top .banner {margin-bottom: 15px;}
+div#page header .banner {margin-bottom: 15px;}
 
 /*****************************************************************************
  * Main content styles
@@ -137,8 +140,8 @@ div#page div#content {
 	width: 565px;
 	padding: 10px;
 	background-color: #ffffff;
-	background-image: url(../picts/content_top_background.png);
-	background-repeat: no-repeat;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px;
 }
 
 div#page div#content h2 {
@@ -171,19 +174,18 @@ div#page div#content div.indexHalfBox {
 	vertical-align: top;
 }
 
-div#page div#content div.actu.promote {
+div#page div#content article.actu.promote {
 	background-color: #FACB66;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	border-radius: 5px;
 	padding: 3px;
 }
 
-div#page div#content div.actu {
+div#page div#content article.actu {
 	margin-bottom: 20px;
 	clear: left;
 }
 
-div#page div#content div.actu h2 {
+div#page div#content article.actu h2 {
 	float: left;
 	text-transform: uppercase;
 	font-size: 1em;
@@ -191,12 +193,12 @@ div#page div#content div.actu h2 {
 	margin: 0;
 }
 
-div#page div#content div.actu h2 a {
+div#page div#content article.actu h2 a {
 	text-decoration: none;
 	color: #000000;
 }
 
-div#page div#content div.actu span.date {
+div#page div#content article.actu span.date {
 	display: block;
 	text-align: right;
 	border-bottom: 1px solid black;
@@ -206,11 +208,15 @@ div#page div#content div.actu span.date {
 	text-transform: uppercase;
 }
 
-div#page div#content div.actu span.date * {
+div#page div#content article.actu span.date * {
 	font-size: 1em;
 }
 
-div#page div#content div.actu img.illu {
+div#page div#content article.actu address {
+	display: inline;
+}
+
+div#page div#content article.actu img.illu {
 	float: right;
 	margin-top: -2em;
 	/*margin-right: 3px;
@@ -246,37 +252,27 @@ div#page div#content div.indexHalfBox h3 {margin: 0;}
  * Right panel styles
  ****************************************************************************/
 
-div#page div#right {
+div#page aside {
 	float: right;
 	width: 180px;
 	padding: 10px;
 	background-color: #ffffff;
-	background-image: url(../picts/right_top_background.png);
-	background-repeat: no-repeat;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px;
 	text-align: center;
 }
 
-div#page div#right table {margin: auto;}
+div#page aside table {margin: auto;}
 
-div#page div#right div#endRight {
-	margin: 0px -10px -10px -10px;
-	background-image: url(../picts/right_bottom_background.png);
-	background-repeat: no-repeat;
-	background-position: left bottom;
-}
-
-div#page div#right table.results {
+div#page aside table.results {
 	width: 180px;
-	border-collapse: collapse;
-	background-image: url(../picts/result_table_bottom_background.png);
-	background-position: left bottom;
-	background-repeat: no-repeat;
+	border-radius: 0 0 10px 10px;
+	border: 5px solid #F6A800;
 }
 
-div#page div#right table.results tr.last td {padding-bottom: 5px;}
-
-div#page div#right table.results caption {
-	background: #F7A800 url(../picts/result_table_top_background.png) no-repeat left top;
+div#page aside table.results caption {
+	background: #F6A800;
+	border-radius: 10px 10px 0 0;
 	color: #ffffff;
 	line-height: 2em;
 }
@@ -285,7 +281,7 @@ div#page div#right table.results caption {
  * Footer styles
  ****************************************************************************/
 
-div#page div#bottom {
+div#page footer {
 	clear: both;
 	padding-top: 15px;
 	text-align: center;
@@ -293,9 +289,6 @@ div#page div#bottom {
 
 div#page div#content div#endContent {
 	margin: 0px -10px -10px -10px;
-	background-image: url(../picts/content_bottom_background.png);
-	background-repeat: no-repeat;
-	background-position: left bottom;
 	height: 30px;
 }
 

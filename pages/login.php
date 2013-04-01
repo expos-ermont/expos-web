@@ -30,8 +30,8 @@ $login_form = '
 	<form id="loginForm" method="post" action="'.$_SERVER['REQUEST_URI'].'" class="loginForm">
 		<fieldset>
 			<legend>Compte existant</legend>
-			<label for="user">Nom d\'utilisateur</label><input type="text" id="user" name="user" tabindex="1" /><br />
-			<label for="pass">Mot de passe</label><input type="password" id="pass" name="pass" tabindex="2" /><br />
+			<label for="user">Nom d\'utilisateur</label><input type="text" id="user" name="user" tabindex="1" placeholder="prenom.nom" required /><br />
+			<label for="pass">Mot de passe</label><input type="password" id="pass" name="pass" tabindex="2" required /><br />
 			<a href="forgotten_password.php" title="Mot de passe oublié">J\'ai oublié mon mot de passe</a><br />
 			<button type="submit" tabindex="3">Valider</button>
 			'.((isset($error)) ? '<div class="error">'.$error.'</div>' : '').'

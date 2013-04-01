@@ -109,7 +109,7 @@ switch($_GET['action']) {
 
 $content = '
 	'.$message.'<br /><br />
-	Cliquez <a href="categories_list.php" title="Liste">ici</a> si vous n\'ètes pas redirigé automatiquement.
+	Cliquez <a href="pages/admin/categories_list.php" title="Liste">ici</a> si vous n\'ètes pas redirigé automatiquement.
 ';
 
 header('Refresh: 3;url=categories_list.php');

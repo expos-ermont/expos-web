@@ -33,8 +33,8 @@ while($data = $result->fetch_array()) {
 	$rows .= '
 		<tr class="'.$bgClass.'">
 			<td>'.$data['name'].'</td>
-			<td class="icon"><a href="rights_edit.php?id='.$data['id_right'].'"><img src="'.$_CONF['wwwRoot'].'picts/pencil.png" alt="Mod." title="Modifier" class="noBorder" /></a></td>
-			<td class="icon"><a href="javascript:confirmDel(\''.setGetVar(array('action' , 'id') , array('del' , $data['id_right']) , 'rights_action.php').'\');"><img src="'.$_CONF['wwwRoot'].'picts/delete.png" alt="Del." title="Supprimer" class="noBorder" /></a></td>
+			<td class="icon"><a href="pages/admin/rights_edit.php?id='.$data['id_right'].'"><img src="'.$_CONF['wwwRoot'].'picts/pencil.png" alt="Mod." title="Modifier" class="noBorder" /></a></td>
+			<td class="icon"><a href="javascript:confirmDel(\''.setGetVar(array('action' , 'id') , array('del' , $data['id_right']) , 'pages/admin/rights_action.php').'\');"><img src="'.$_CONF['wwwRoot'].'picts/delete.png" alt="Del." title="Supprimer" class="noBorder" /></a></td>
 		</tr>
 	';
 }
@@ -44,7 +44,7 @@ $content = '
 	<table class="listing">
 		<tr class="bgDarkGray">
 			<td>'.$result->num_rows.' droits</td>
-			<td colspan="2" class="alignRight"><a href="rights_edit.php"><img src="'.$_CONF['wwwRoot'].'picts/add.png" alt="Add" title="Ajouter" class="noBorder" /></a></td>
+			<td colspan="2" class="alignRight"><a href="pages/admin/rights_edit.php"><img src="'.$_CONF['wwwRoot'].'picts/add.png" alt="Add" title="Ajouter" class="noBorder" /></a></td>
 		</tr>
 		'.$rows.'
 	</table>

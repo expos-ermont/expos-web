@@ -65,7 +65,7 @@ while($data = $result->fetch_array()) {
 }
 
 $content = '
-<form action="teams_action.php?action='.$action.'&id='.$id_team.'" method="post" enctype="multipart/form-data">
+<form action="pages/admin/teams_action.php?action='.$action.'&id='.$id_team.'" method="post" enctype="multipart/form-data">
 	<table class="noBorder">
 		<tr>
 			<td class="alignTop">Nom : </td>

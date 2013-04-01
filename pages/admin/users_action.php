@@ -110,7 +110,7 @@ switch($_GET['action']) {
 
 $content = '
 	'.$message.'<br /><br />
-	Cliquez <a href="users_list.php" title="Liste">ici</a> si vous n\'êtes pas redirigé automatiquement.
+	Cliquez <a href="pages/admin/users_list.php" title="Liste">ici</a> si vous n\'êtes pas redirigé automatiquement.
 ';
 
 header('Refresh: 3;url=users_list.php');

@@ -69,7 +69,7 @@ $content = '
 		-->
 	</script>
 	'.((isset($error)) ? '<div class="error">'.$error.'</div>' : '').'
-	<form method="post" action="'.setGetVar(array('action' , 'id') , array($action , $id_user) , 'users_action.php').'">
+	<form method="post" action="'.setGetVar(array('action' , 'id') , array($action , $id_user) , 'pages/admin/users_action.php').'">
 		<table class="noBorder">
 			<tr>
 				<td>Nom : </td>

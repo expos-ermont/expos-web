@@ -66,7 +66,7 @@ while($data = $result->fetch_array()) {
 
 $content = '
 	'.((isset($error)) ? '<div class="error">'.$error.'</div>' : '').'
-	<form method="post" action="'.setGetVar(array('action' , 'id') , array($action , $id_right) , 'rights_action.php').'">
+	<form method="post" action="'.setGetVar(array('action' , 'id') , array($action , $id_right) , 'pages/admin/rights_action.php').'">
 		<table class="noBorder">
 			<tr>
 				<td>Nom : </td>

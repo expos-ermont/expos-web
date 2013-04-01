@@ -37,8 +37,8 @@ while($data = $result->fetch_array()) {
 		<tr class="'.$bgClass.'">
 			<td>'.stripslashes($data['nom']).'</td>
 			<td>'.$data['nb_users'].' joueurs</td>
-			<td class="icon"><a href="'.setGetVar('id' , $data['id_equipe'] , 'teams_edit.php').'"><img src="'.$_CONF['wwwRoot'].'picts/pencil.png" alt="Mod." title="Modifier" class="noBorder" /></a></td>
-			<td class="icon"><a href="javascript:confirmDel(\''.setGetVar(array('action' , 'id') , array('del' , $data['id_equipe']) , 'teams_action.php').'\');"><img src="'.$_CONF['wwwRoot'].'picts/delete.png" alt="Del." title="Supprimer" class="noBorder" /></a></td>
+			<td class="icon"><a href="'.setGetVar('id' , $data['id_equipe'] , 'pages/admin/teams_edit.php').'"><img src="'.$_CONF['wwwRoot'].'picts/pencil.png" alt="Mod." title="Modifier" class="noBorder" /></a></td>
+			<td class="icon"><a href="javascript:confirmDel(\''.setGetVar(array('action' , 'id') , array('del' , $data['id_equipe']) , 'pages/admin/teams_action.php').'\');"><img src="'.$_CONF['wwwRoot'].'picts/delete.png" alt="Del." title="Supprimer" class="noBorder" /></a></td>
 		</tr>
 	';
 }
@@ -48,7 +48,7 @@ $content = '
 	<table class="listing">
 		<tr class="bgDarkGray">
 			<td>'.$result->num_rows.' equipes</td>
-			<td colspan="3" class="alignRight"><a href="teams_edit.php"><img src="'.$_CONF['wwwRoot'].'picts/add.png" alt="Add" title="Ajouter" class="noBorder" /></a></td>
+			<td colspan="3" class="alignRight"><a href="pages/admin/teams_edit.php"><img src="'.$_CONF['wwwRoot'].'picts/add.png" alt="Add" title="Ajouter" class="noBorder" /></a></td>
 		</tr>
 		'.$rows.'
 	</table>

@@ -45,7 +45,7 @@ while($data = $result->fetch_array()) {
 
 $content = '
 <script type="text/javascript" src="'.$_CONF['wwwRoot'].'js/ckeditor/ckeditor.js"></script>
-<form action="actus_action.php?action='.$action.'&id='.$id.'" method="post" enctype="multipart/form-data">
+<form action="pages/admin/actus_action.php?action='.$action.'&id='.$id.'" method="post" enctype="multipart/form-data">
 	<table class="noBorder">
 		<tr>
 			<td class="alignTop">Titre : </td>

@@ -148,7 +148,7 @@ switch($_GET['action']) {
 
 $content = '
 	'.$message.'<br /><br />
-	Cliquez <a href="teams_list.php" title="Liste">ici</a> si vous n\'ètes pas redirigé automatiquement.
+	Cliquez <a href="pages/admin/teams_list.php" title="Liste">ici</a> si vous n\'ètes pas redirigé automatiquement.
 ';
 
 header('Refresh: 3;url=teams_list.php');

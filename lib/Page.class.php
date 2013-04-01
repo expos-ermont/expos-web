@@ -30,7 +30,7 @@ class Page {
 		$this->_substituteVar('title' , $this->title);
 		$this->_substituteVar('keywords' , $this->keywords);
 		$this->_substituteVar('description' , $this->description);
-		$this->_substituteVar('meta_expires' , gmdate('r' , time()+60*60*24*2));
+		//$this->_substituteVar('meta_expires' , gmdate('r' , time()+60*60*24*2));
 		$this->toSubstitute['userMenu'] = $this->_generateUserMenu();
 		foreach($this->toSubstitute as $key => $value) {$this->_substituteVar($key , $value);}
 		$this->_substituteFiles();
@@ -43,7 +43,7 @@ class Page {
 	
 	private function _loadDefault() {
 		global $_CONF;
-		$this->template = 'default.xhtml';
+		$this->template = 'default.html';
 		$this->title = $_CONF['title'];
 		$this->keywords = $_CONF['keywords'];
 		$this->description = $_CONF['description'];
@@ -79,7 +79,7 @@ class Page {
 			'pages/admin/pages_list.php' => 'Pages',
 			'pages/admin/users_list.php' => 'Utilisateurs',
 			'pages/admin/teams_list.php' => 'Equipes',
-			'pages/admin/results.php' => 'R�sultats',
+			'pages/admin/results.php' => 'Résultats',
 			'pages/user/infos_edit.php' => 'Mes infos'
 		);
 		
@@ -95,7 +95,7 @@ class Page {
 					<li><a href="#" title="Mon compte">Bienvenue '.$_SESSION['user']->firstname.'</a>
 						<ul>
 							'.$userListItems.'
-							<li><a href="'.setGetVar('ref' , $_SERVER['REQUEST_URI'] , $_CONF['wwwRoot'].'pages/logout.php').'" title="Se d�connecter">Deconnexion</a></li>
+							<li><a href="'.setGetVar('ref' , $_SERVER['REQUEST_URI'] , $_CONF['wwwRoot'].'pages/logout.php').'" title="Se déconnecter">Deconnexion</a></li>
 						</ul>
 					</li>
 				</ul>

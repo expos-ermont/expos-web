@@ -84,7 +84,7 @@ switch($_GET['action']) {
 
 $content = '
 	'.$message.'<br /><br />
-	Cliquez <a href="rights_list.php" title="Liste">ici</a> si vous n\'êtes pas redirigé automatiquement.
+	Cliquez <a href="pages/admin/rights_list.php" title="Liste">ici</a> si vous n\'êtes pas redirigé automatiquement.
 ';
 
 header('Refresh: 3;url=rights_list.php');

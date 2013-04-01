@@ -35,8 +35,8 @@ foreach($actus as $actu) {
 	if(Control::accessToPage('pages/admin/actus_edit.php' , false)) {
 		$controls = '
 			<br />
-			<a href="'.setGetVar('id' , $data['id_actu'] , $_CONF['wwwRoot'].'pages/admin/actus_edit.php').'"><img src="'.$_CONF['wwwRoot'].'picts/pencil.png" alt="Mod." title="Modifier" class="noBorder" /></a>
-			<a href="javascript:confirmDel(\''.setGetVar(array('action' , 'id') , array('del' , $data['id_actu']) , $_CONF['wwwRoot'].'pages/admin/actus_action.php').'\');"><img src="'.$_CONF['wwwRoot'].'picts/delete.png" alt="Del." title="Supprimer" class="noBorder" /></a>';
+			<a href="'.setGetVar('id' , $actu->getId() , $_CONF['wwwRoot'].'pages/admin/actus_edit.php').'"><img src="'.$_CONF['wwwRoot'].'picts/pencil.png" alt="Mod." title="Modifier" class="noBorder" /></a>
+			<a href="javascript:confirmDel(\''.setGetVar(array('action' , 'id') , array('del' , $actu->getId()) , $_CONF['wwwRoot'].'pages/admin/actus_action.php').'\');"><img src="'.$_CONF['wwwRoot'].'picts/delete.png" alt="Del." title="Supprimer" class="noBorder" /></a>';
 	}
 	
 	// Define the image to display
@@ -47,15 +47,15 @@ foreach($actus as $actu) {
 	
 	$classPromote = ($actu->isPromoted()) ? 'promote' : '';
 	$content .= '
-		<div class="actu hentry '.$classPromote.'">
+		<article class="actu hentry '.$classPromote.'">
 			<h2 class="entry-title"><a href="'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle(), MB_CASE_UPPER, 'UTF-8'))).'_'.$actu->getId().'.html" title="'.normalizeToHTML($actu->getTitle()).'">'.normalizeToHTML($actu->getTitle()).'</a></h2>
 			<span class="date">le <span class="updated">'.normalizeToHTML($actu->getDate()).'T'.normalizeToHTML($actu->getTime()).'</span></span>
-			par <span class="author vcard"><span class="fn">'.$actu->getAuthor().'</span></span> - '.$actu->getCategory().'<br />
+			par <address class="author vcard"><a class="fn">'.$actu->getAuthor().'</a></address> - '.$actu->getCategory().'<br />
 			<br />
 			'.$image.'
 			<div class="entry-content">'.normalizeToHTML($actu->getContent()).'</div>
 			'.$controls.'
-		</div>
+		</article>
 	';
 	
 	if(!is_null($id_actu)) {
@@ -76,7 +76,7 @@ for($i = $num_page - 3; $i <= $num_page + 3; $i++) {
 if($num_page + 3 < $last_page) {$content .= '.. ';}
 $content .= getPageLink($last_page);
 
-$content .= '<br /><a href="'.$_CONF['wwwRoot'].'pages/actus_feed.rss.php" title=""><img src="'.$_CONF['wwwRoot'].'picts/rss.png" alt="" align="middle" class="noBorder" /> Flux RSS</a>';
+$content .= '<br /><a href="'.$_CONF['wwwRoot'].'pages/actus_feed.rss.php" title=""><img src="'.$_CONF['wwwRoot'].'picts/rss.png" alt="" class="noBorder" /> Flux RSS</a>';
 	
 $page = new Page();
 $page->title = (is_null($id_actu)) ? 'Actualités' : $page_title;

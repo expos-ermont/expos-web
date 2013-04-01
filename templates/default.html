@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>[%var:title%]</title>
+	<meta charset="UTF-8">
+	<base href="[%var:wwwRoot%]" target="_self" />
+	<meta name="keywords" content="[%var:keywords%]" />
+	<meta name="description" content="[%var:description%]" />
+	<meta name="author" content="Florent Captier" />
+	<meta name="robots" content="index,follow" />
+	<meta name="revisit-after" content="2 days" />
+	<meta name="verify-v1" content="AHQAXTX71s4Sk3Dcw33/R7AYwQUxMHA6z2PGi0FphRs=" /> <!-- Google tools validation -->
+	<link rel="icon" type="image/png" href="picts/icon.png" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="pages/actus_feed.rss.php" />
+	<link rel="profile" href="http://microformats.org/profile/hcard" />
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+</head>
+<body>
+	<div id="page">
+		<header>
+			<h1><a href="" title="Expos Ermont Baseball/Softball Club"><img src="picts/logo_expos.png" alt="Expos Ermont Baseball/Softball Club" /></a></h1>
+			<nav>
+				<ul>
+					<li><a href="pages/actus.php" title="Actualités">Actus</a></li>
+					<li><a href="pages/club.php" title="Club">Club</a></li>
+					<li><a href="pages/boutique.php" title="Boutique">Boutique</a></li>
+					<li><a href="pages/equipes.php" title="Equipes">Equipes</a></li>
+					<li><a href="pages/medias.php" title="Photos">Photos</a></li>
+					<li><a href="pages/liens.php" title="Liens">Liens</a></li>
+					<li><a href="pages/contact.php" title="Contact">Contact</a></li>
+				</ul>
+				<div id="usrBox">[%var:userMenu%]</div>
+			</nav>
+			<!-- <a href="http://www.expos-ermont.com/pages/actu/2%C3%88ME+TOURNOI+SOFTBALL+MIXTE+19-20+MARS+2011_297.html" title="Tournoi softball" target="_blank"><img src="picts/banners/tournoi_softball.png" alt="" class="noBorder banner" /></a> -->
+		</header>
+		<!-- Main content BEGIN -->
+		<div id="content">
+			[%var:content%]
+			&nbsp;
+			<div id="endContent">&nbsp;</div>
+		</div>
+		<!-- Main content END -->
+		<!-- Right bar BEGIN -->
+		<aside>
+			<a href="https://www.facebook.com/exposermont" title="Retrouvez nous sur Facebook"><img src="picts/logo_facebook.jpg" alt="Facebook" class="noBorder" /></a><br />
+			<br />
+			[%file:pages/_results.php%]
+			<br />
+			<img src="picts/logo_expos_mini.png" alt="" />
+		</aside>
+		<!-- Right bar END -->
+		&nbsp;
+		<footer>
+			<a href="http://www.w3.org/html/logo/" title="HTML5" target="_blank"><img src="picts/html5.png" alt="" class="noBorder" /></a> - <a href="http://validator.w3.org/check/referer" title="Site valide html5" target="_blank"><img src="picts/html5_semantics.png" alt="" class="noBorder" /></a> - <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Site valide css 3" target="_blank"><img src="picts/html5_styling.png" alt="" class="noBorder" /></a><br />
+			expos ermont &copy; 2006-2013<br />
+			Baseball club Val d'Oise - Animations sportives
+		</footer>
+	</div>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-9495560-1");
+		pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+</body>
+</html>

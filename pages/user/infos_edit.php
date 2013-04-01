@@ -26,17 +26,17 @@ $int_terms = (int) $_SESSION['user']->int_terms;
 
 $content = '
 	<h2>Editer mes informations</h2>
-	<form method="post" action="infos_action.php">
+	<form method="post" action="pages/user/infos_action.php">
 		<fieldset>
 			<legend>Personnelles</legend>
-			<label for="firstname">Prénom</label><input type="text" id="firstname" name="firstname" disabled="disabled" value="'.$firstname.'" /><br />
-			<label for="lastname">Nom</label><input type="text" id="lastname" name="lastname" disabled="disabled" value="'.$lastname.'" /><br />
-			<label for="birthdate">Date de naissance</label><input type="text" id="birthdate" name="birthdate" disabled="disabled" value="'.$birthdate.'" /><br />
-			<label for="street">Rue et n° de rue</label><input type="text" id="street" name="street" value="'.$street.'" /><br />			
-			<label for="postalcode">Code Postal</label><input type="text" id="postalcode" name="postalcode" value="'.$postalcode.'" /><br />			
-			<label for="city">Ville</label><input type="text" id="city" name="city" value="'.$city.'" /><br />			
-			<label for="mail">Email</label><input type="text" id="mail" name="mail" value="'.$mail.'" /><br />			
-			<label for="phone">Téléphone</label><input type="text" id="phone" name="phone" value="'.$phone.'" /><br />			
+			<label for="firstname">Prénom</label><input type="text" id="firstname" name="firstname" disabled="disabled" value="'.$firstname.'" required /><br />
+			<label for="lastname">Nom</label><input type="text" id="lastname" name="lastname" disabled="disabled" value="'.$lastname.'" required /><br />
+			<label for="birthdate">Date de naissance</label><input type="date" id="birthdate" name="birthdate" disabled="disabled" value="'.$birthdate.'" required /><br />
+			<label for="street">Rue et n° de rue</label><input type="text" id="street" name="street" value="'.$street.'" required /><br />			
+			<label for="postalcode">Code Postal</label><input type="text" id="postalcode" name="postalcode" value="'.$postalcode.'" pattern="[0-9]{5}" required /><br />			
+			<label for="city">Ville</label><input type="text" id="city" name="city" value="'.$city.'" required /><br />			
+			<label for="mail">Email</label><input type="email" id="mail" name="mail" value="'.$mail.'" required /><br />			
+			<label for="phone">Téléphone</label><input type="text" id="phone" name="phone" value="'.$phone.'" placeholder="ex: 0678092617" pattern="[0-9]{10}" required /><br />			
 		</fieldset>
 		<fieldset>
 			<legend>Sécurité & confidentialité</legend>

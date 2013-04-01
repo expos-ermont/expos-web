@@ -31,7 +31,7 @@ if (isset($_GET['id'])) {
 }
 
 $content = '
-<form action="categories_action.php?action='.$action.'&id='.$id_category.'" method="post" enctype="multipart/form-data">
+<form action="pages/admin/categories_action.php?action='.$action.'&id='.$id_category.'" method="post" enctype="multipart/form-data">
 	<table class="noBorder">
 		<tr>
 			<td class="alignTop">Name : </td>
