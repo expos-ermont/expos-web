@@ -39,7 +39,7 @@ div#page {
  * Header styles
  ****************************************************************************/
 
-div#page header h1 {
+div#page>header h1 {
 	height: 173px;
 	background-image: url(../picts/top_background.png);
 	background-repeat: no-repeat;
@@ -48,13 +48,13 @@ div#page header h1 {
 	box-shadow: 0px 0px 10px;
 }
 
-div#page header h1 img {
+div#page>header h1 img {
 	margin-top: 20px;
 	margin-left: 25px;
 	border: 0;
 }
 
-div#page header nav {
+div#page>header nav {
 	display: block;
 	text-align: right;
 	margin-bottom: 15px;
@@ -67,20 +67,20 @@ div#page header nav {
 	white-space: nowrap;
 }
 
-div#page header ul {
+div#page>header ul {
 	float: left;
 	padding-left: 15px;
 	list-style: none;
 }
 
-div#page header ul li {
+div#page>header ul li {
 	float: left;
 	line-height: 42px;
 	margin-right: 10px;
 	position: relative;
 }
 
-div#page header a {
+div#page>header a {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -88,13 +88,13 @@ div#page header a {
 	font-size: 14px;
 }
 
-div#page header ul li:hover a, div#page header ul li a:hover {
+div#page>header ul li:hover a, div#page>header ul li a:hover {
 	display: block;
 	background-color: white;
 	color: #F6A800;
 }
 
-div#page header ul li ul {
+div#page>header ul li ul {
 	position: absolute;
 	left: 0px;
 	top: 41px;
@@ -106,30 +106,30 @@ div#page header ul li ul {
 	background-color: #F6A800;
 }
 
-div#page header ul li:hover ul {display: block;}
+div#page>header ul li:hover ul {display: block;}
 
-div#page header ul li:hover ul li {
+div#page>header ul li:hover ul li {
 	float: none; 
 	margin: 3px;
 	line-height: 1.3em;
 }
 
-div#page header ul li:hover ul li a {
+div#page>header ul li:hover ul li a {
 	background-color: #F6A800;
 	color: #ffffff;
 }
 
-div#page header ul li:hover ul li:hover a, div#page header ul li:hover ul li a:hover {
+div#page>header ul li:hover ul li:hover a, div#page>header ul li:hover ul li a:hover {
 	background-color: white;
 	color: #F6A800;
 }
 
-div#page header div#usrBox a {text-transform: none;}
-div#page header div#usrBox a * {vertical-align: middle;}
-div#page header div#usrBox ul {float: right;}
-div#page header div#usrBox ul li ul {right: 0;}
+div#page>header div#usrBox a {text-transform: none;}
+div#page>header div#usrBox a * {vertical-align: middle;}
+div#page>header div#usrBox ul {float: right;}
+div#page>header div#usrBox ul li ul {right: 0;}
 
-div#page header .banner {margin-bottom: 15px;}
+div#page>header .banner {margin-bottom: 15px;}
 
 /*****************************************************************************
  * Main content styles
@@ -218,7 +218,7 @@ div#page div#content article.actu address {
 
 div#page div#content article.actu img.illu {
 	float: right;
-	margin-top: -2em;
+	margin-top: -10px;
 	/*margin-right: 3px;
 	margin-bottom: 3px;*/
 }

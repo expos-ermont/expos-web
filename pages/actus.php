@@ -42,16 +42,18 @@ foreach($actus as $actu) {
 	// Define the image to display
 	$image = $actu->getPictureUrl();
 	if(!empty($image)) {
-		$image = '<img src="'.$image.'" alt="" class="illu" />';	
+		$image = '<img src="'.$image.'" width="107" height="99" alt="" class="illu" />';	
 	}
 	
 	$classPromote = ($actu->isPromoted()) ? 'promote' : '';
+	$permalink = $_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle(), MB_CASE_UPPER, 'UTF-8'))).'_'.$actu->getId().'.html';
 	$content .= '
 		<article class="actu hentry '.$classPromote.'">
-			<h2 class="entry-title"><a href="'.$_CONF['wwwRoot'].'pages/actu/'.urlencode(str_replace('/' , '' , mb_convert_case($actu->getTitle(), MB_CASE_UPPER, 'UTF-8'))).'_'.$actu->getId().'.html" title="'.normalizeToHTML($actu->getTitle()).'">'.normalizeToHTML($actu->getTitle()).'</a></h2>
-			<span class="date">le <span class="updated">'.normalizeToHTML($actu->getDate()).'T'.normalizeToHTML($actu->getTime()).'</span></span>
-			par <address class="author vcard"><a class="fn">'.$actu->getAuthor().'</a></address> - '.$actu->getCategory().'<br />
-			<br />
+			<header>
+				<h2 class="entry-title"><a rel="bookmark" href="'.$permalink.'" title="'.normalizeToHTML($actu->getTitle()).'">'.normalizeToHTML($actu->getTitle()).'</a></h2>
+				<span class="date">le <span class="updated">'.normalizeToHTML($actu->getDate()).'T'.normalizeToHTML($actu->getTime()).'</span></span>
+				par <address class="author vcard"><a class="fn">'.$actu->getAuthor().'</a></address> - '.$actu->getCategory().'
+			</header>
 			'.$image.'
 			<div class="entry-content">'.normalizeToHTML($actu->getContent()).'</div>
 			'.$controls.'
