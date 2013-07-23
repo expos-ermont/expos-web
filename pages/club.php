@@ -20,33 +20,41 @@ $content = '
 		<tr>
 			<th>Catégorie</th>
 			<th>
-				Tarifs 2012/2013<br />
+				Tarifs 2013/2014<br />
 				(Cotisation club + License fédérale)
 			</th>
 		</tr>
 		<tr>
 			<td>Senior</td>
-			<td><b>160,00€</b> (115€ + 45€)</td>
-		</tr>
-		<tr>
-			<td>Etudiant (avec photocopie de la carte étudiant)</td>
-			<td><b>135,00€</b> (90€ + 45€)</td>
+			<td><b>190,00€</b></td>
 		</tr>
 		<tr>
 			<td>Feminin senior</td>
-			<td><b>135,00€</b> (90€ + 45€)</td>
+			<td><b>160,00€</b></td>
 		</tr>
 		<tr>
-			<td>&lt;1997</td>
-			<td><b>135,00€</b> (105€ + 30€)</td>
+			<td>13 à 18 ans (1996 à 2001)</td>
+			<td><b>160,00€</b></td>
 		</tr>
 		<tr>
-			<td>Famille nombreuse</td>
-			<td>-25,00€</td>
+			<td>&lt;2001</td>
+			<td><b>140,00€</b></td>
+		</tr>
+		<tr>
+			<td>
+				Famille nombreuse (même foyer)<br />
+				2ème personne<br>
+				3ème personne
+			</td>
+			<td>
+				<br>
+				-25,00€<br>
+				-50,00€
+			</td>
 		</tr>
 	</table>
 
-	N.B.: les tarifs annoncés intègrent la licence pour la saison 2012/2013 et l\'assurance sportive. Cette dernière peut être remboursée sur demande. L\'assureur fédéral propose également une assurance complémentaire (se renseigner auprès des responsables du club).<br />
+	N.B.: les tarifs annoncés intègrent la licence pour la saison 2013/2014 et l\'assurance sportive. Cette dernière peut être remboursée sur demande. L\'assureur fédéral propose également une assurance complémentaire (se renseigner auprès des responsables du club).<br />
 	Règlement en espèces ou par chèque à l\'ordre des Expos d\'Ermont, possibilité de payer en 3 fois.<br />
 	<h3>Pièces à fournir</h3> 
 	Le dossier d\'inscription rempli,<br /> 
@@ -57,8 +65,8 @@ $content = '
 	PAS DE COQUILLE = PAS D\'ENTRAINEMENT = PAS DE MATCH<br />
 	Le club met des gants à votre disposition pendant les entrainements et les matchs. Vous pouvez aussi consulter nos différents catalogues de vente par correspondance<br />
 	<br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2012-2013.pdf" title="Dossier inscription 2012/2013" target="_blank">Dossier d\'incription</a><br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2012-2013.pdf" title="Dossier renseignement 2012/2013" target="_blank">Dossier de renseignement</a><br />
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2013-2014.pdf" title="Dossier inscription 2013/2014" target="_blank">Dossier d\'incription</a><br /> 
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2013-2014.pdf" title="Dossier renseignement 2013/2014" target="_blank">Dossier de renseignement</a><br />
 	<a href="'.$_CONF['wwwRoot'].'data/manuel_baseball.pdf" title="Manuel de baseball" target="_blank">Manuel sur le baseball</a>
 		
 	<h2 id="sections">Les sections</h2>
@@ -71,9 +79,9 @@ $content = '
 		<tr>
 			<td>Benjamins</td>
 			<td>
+				2007<br />
 				2006<br />
-				2005<br />
-				2004
+				2005
 			</td>
 			<td>
 				Mercredi 14h30 à 16h30<br />
@@ -83,9 +91,9 @@ $content = '
 		<tr>
 			<td>Minimes</td>
 			<td>
+				2004<br />
 				2003<br />
-				2002<br />
-				2001
+				2002
 			</td>
 			<td>
 				Mercredi 14h30 à 16h30<br />
@@ -95,9 +103,9 @@ $content = '
 		<tr>
 			<td>Cadets</td>
 			<td>
+				2001<br />
 				2000<br />
-				1999<br />
-				1998
+				1999
 			</td>
 			<td>
 				Mercredi 14h30 à 16h30<br />
@@ -106,10 +114,11 @@ $content = '
 		</tr>
 		<tr>
 			<td>Juniors-Séniors</td>
-			<td>à partir de 1997</td>
+			<td>à partir de 1998</td>
 			<td>
 				Mardi de 20h à 22h<br />
-				Jeudi de 20h à 22h
+				Jeudi de 20h à 22h<br />
+				Samedi de 15h à 17h (loisir softball)
 			</td>
 		</tr>
 		<tr>
