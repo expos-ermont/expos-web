@@ -7,7 +7,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'expos.views.static', {'page': 'home'}, name='home'),
-    url(r'^club/$', 'expos.views.static', {'page': 'club'}, name='club'),
     url(r'^actus/', include('news.urls')),
     url(r'^pages/', include('django.contrib.flatpages.urls')),
 
