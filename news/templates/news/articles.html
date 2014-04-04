@@ -1,0 +1,16 @@
+{% extends "default.html" %}
+
+{% block content %}
+{% for article in articles %}
+	<article class="actu hentry ">
+		<header>
+			<h2 class="entry-title"><a rel="bookmark" href="" title="">{{ article.title }}</a></h2>
+			<span class="date">le <span class="updated">{{ article.pub_date|date:'c' }}</span></span>
+			par <address class="author vcard"><a class="fn">{{ article.author }}</a></address> - <a href="{% url 'actus_cat' article.category.name %}" title="{{ article.category.name }}" >{{ article.category.name }}</a>
+		</header>
+		<div class="entry-content">{{ article.content }}</div>
+	</article>
+{% empty %}
+	No article published at the moment, please come bacl later :)
+{% endfor %}
+{% endblock %}

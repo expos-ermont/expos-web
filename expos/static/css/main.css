@@ -1,0 +1,350 @@
+* {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
+body {
+	text-align: center;
+	background: #a9a9a9 url(../images/body_background.png) repeat fixed;
+}
+
+h2, h3 {margin-top: 2em;}
+h2 {font-size: 1.3em;}
+
+p {margin: 1em 0 1em 0;}
+
+a {color: #F6A800;}
+a:hover,a:visited {color: #666666;}
+a:hover {text-decoration: none;}
+a img {border: 1px solid #666666; padding: 2px;}
+a:hover img {border-color: #333333;}
+a.button {padding: 3px;}
+
+form button, a.button {background-image: url(../images/button_background.png); color: #333333; border: 1px solid #999999; height: 25px; margin-top: 5px; text-decoration: none;}
+form button:hover, a.button:hover {border-color: #666666;}
+form button:active, a.button:active {background-image: url(../images/button_background_hover.png);}
+form input, form textarea , form select {border: 1px solid #999999; margin: 3px 0px 3px 0px; padding: 2px;}
+td, th {padding: 3px;}
+
+div#page {
+	width: 800px;
+	margin: auto;
+	text-align: left;
+}
+
+/*****************************************************************************
+ * Header styles
+ ****************************************************************************/
+
+div#page>header h1 {
+	height: 173px;
+	background-image: url(../images/top_background.png);
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0px 0px 10px;
+}
+
+div#page>header h1 img {
+	margin-top: 20px;
+	margin-left: 25px;
+	border: 0;
+}
+
+div#page>header nav {
+	display: block;
+	text-align: right;
+	margin-bottom: 15px;
+	padding-right: 10px;
+	background-color: #F6A800;
+	border-radius: 10px;
+	border: 5px solid #ffffff;
+	box-shadow: 0px 0px 10px;
+	line-height: 42px;
+	white-space: nowrap;
+}
+
+div#page>header ul {
+	float: left;
+	padding-left: 15px;
+	list-style: none;
+}
+
+div#page>header ul li {
+	float: left;
+	line-height: 42px;
+	margin-right: 10px;
+	position: relative;
+}
+
+div#page>header a {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+div#page>header ul li:hover a, div#page>header ul li a:hover {
+	display: block;
+	background-color: white;
+	color: #F6A800;
+}
+
+div#page>header ul li ul {
+	position: absolute;
+	left: 0px;
+	top: 41px;
+	display: none;
+	padding: 0;
+	border-width: 0 4px 4px 4px;
+	border-color: #ffffff;
+	border-style: solid;
+	background-color: #F6A800;
+}
+
+div#page>header ul li:hover ul {display: block;}
+
+div#page>header ul li:hover ul li {
+	float: none; 
+	margin: 3px;
+	line-height: 1.3em;
+}
+
+div#page>header ul li:hover ul li a {
+	background-color: #F6A800;
+	color: #ffffff;
+}
+
+div#page>header ul li:hover ul li:hover a, div#page>header ul li:hover ul li a:hover {
+	background-color: white;
+	color: #F6A800;
+}
+
+div#page>header div#usrBox a {text-transform: none;}
+div#page>header div#usrBox a * {vertical-align: middle;}
+div#page>header div#usrBox ul {float: right;}
+div#page>header div#usrBox ul li ul {right: 0;}
+
+div#page>header .banner {margin-bottom: 15px;}
+
+/*****************************************************************************
+ * Main content styles
+ ****************************************************************************/
+
+div#page div#content {
+	float: left;
+	width: 565px;
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px;
+}
+
+div#page div#content h2 {
+	display: block;
+	border-bottom: 1px solid black;
+	margin-bottom: 3px;
+}
+
+div#page div#content ul {margin-left: 10px;}
+
+div#page div#content table {
+	border: 1px solid #cccccc;
+	border-collapse: collapse;
+}
+div#page div#content table td {border: 1px solid black;}
+
+div#page div#content form fieldset, div#page div#content form fieldset legend {border: 1px solid #cccccc; padding: 3px;}
+div#page div#content form.loginForm {display: inline-block; width: 100%; vertical-align: top;}
+div#page div#content form fieldset legend {margin-left: 3px; background-color: #eeeeee;}
+div#page div#content form fieldset label {margin-right: 1em;}
+div#page div#content form.loginForm fieldset label {display: none;}
+div#page div#content form.loginForm input {height: 18px; padding: 1px 1px 0 18px; margin: 5px 0 0 0;}
+div#page div#content form.loginForm input#user {background: #ffffff url(../images/user.png) no-repeat scroll 1px 1px;}
+div#page div#content form.loginForm input#pass {background: #ffffff url(../images/key.png) no-repeat scroll 1px 1px;}
+div#page div#content form.loginForm input#mail {background: #ffffff url(../images/email.png) no-repeat scroll 1px 1px;}
+
+div#page div#content div.indexHalfBox {
+	display: inline-block;
+	width: 280px;
+	vertical-align: top;
+}
+
+div#page div#content article.actu.promote {
+	background-color: #FACB66;
+	border-radius: 5px;
+	padding: 3px;
+}
+
+div#page div#content article.actu {
+	margin-bottom: 20px;
+	clear: left;
+}
+
+div#page div#content article.actu h2 {
+	float: left;
+	text-transform: uppercase;
+	font-size: 1em;
+	border: 0;
+	margin: 0;
+}
+
+div#page div#content article.actu h2 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+div#page div#content article.actu span.date {
+	display: block;
+	text-align: right;
+	border-bottom: 1px solid black;
+	margin-bottom: 5px;
+	padding-top: 0.3em;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+div#page div#content article.actu span.date * {
+	font-size: 1em;
+}
+
+div#page div#content article.actu address {
+	display: inline;
+}
+
+div#page div#content article.actu img.illu {
+	float: right;
+	margin-top: -10px;
+	/*margin-right: 3px;
+	margin-bottom: 3px;*/
+}
+
+div#page div#content a.goToc {float: right;}
+
+div#page div#content table.listing {
+	border: 1px solid #333333;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+div#page div#content table.listing * {padding: 1px;}
+div#page div#content table.listing td {border: 0; border-bottom: 1px solid #333333;}
+
+div#page div#content div.indexHalfBox {
+	width: 270px;
+	border: 2px solid #F6A800;
+	padding: 3px;
+}
+
+div#page div#content div.indexHalfBox h2 {
+	background-color: #F6A800;
+	color: white;
+	margin: -3px;
+	border: 0;
+}
+div#page div#content div.indexHalfBox h3 {margin: 0;}
+
+/*****************************************************************************
+ * Right panel styles
+ ****************************************************************************/
+
+div#page aside {
+	float: right;
+	width: 180px;
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px;
+	text-align: center;
+}
+
+div#page aside table {margin: auto;}
+
+div#page aside table.results {
+	width: 180px;
+	border-radius: 0 0 10px 10px;
+	border: 5px solid #F6A800;
+}
+
+div#page aside table.results caption {
+	background: #F6A800;
+	border-radius: 10px 10px 0 0;
+	color: #ffffff;
+	line-height: 2em;
+}
+
+/*****************************************************************************
+ * Footer styles
+ ****************************************************************************/
+
+div#page footer {
+	clear: both;
+	padding-top: 15px;
+	text-align: center;
+}
+
+div#page div#content div#endContent {
+	margin: 0px -10px -10px -10px;
+	height: 30px;
+}
+
+/*****************************************************************************
+ * Common classes
+ ****************************************************************************/
+
+p.rail {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.error, div.success, div.info {
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px;
+	margin: 3px 0 3px 0;
+	text-indent: 21px;
+}
+
+div.error {
+	border-color: #DF0000;
+	background: #FF9F9F url(../images/error.png) no-repeat scroll 3px 3px;
+}
+
+div.success {
+	border-color: #00DF00;
+	background: #9FFF9F url(../images/accept.png) no-repeat scroll 3px 3px; 
+}
+
+div.info {
+	border-color: #0000DF;
+	background: #AFBDFF url(../images/information.png) no-repeat scroll 3px 3px; 
+}
+
+a.markupIcon {margin: 2px 2px 2px 0;}
+
+td.alignTop {vertical-align: top;}
+td.icon {width: 16px;}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.visible {
+	display: block;
+	visibility: visible;
+}
+
+.alignRight {text-align: right;}
+.alignCenter {text-align: center;}
+.bgLightGray {background-color: #eeeeee;}
+.bgMediumGray {background-color: #bbbbbb;}
+.bgDarkGray {background-color: #666666;}
+.noBorder, table.noBorder td {border: 0 !important;}
+.noWrap {white-space: nowrap;}
+.fullWidth {width: 100%;}
+.displayBlock {display: block;}

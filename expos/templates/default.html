@@ -1,0 +1,79 @@
+{% load staticfiles %}
+{% load flatpages %}
+
+{% get_flatpages as flatpages %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>{% block title %}Expos Ermont{% endblock %}</title>
+	<meta charset="UTF-8">
+	<base href="/" target="_self" />
+	<meta name="keywords" content="[%var:keywords%]" />
+	<meta name="description" content="{% block description %}Club de baseball et de softball d'Ermont (Val d'Oise){% endblock %}" />
+	<meta name="author" content="Florent Captier" />
+	<meta name="robots" content="index,follow" />
+	<meta name="revisit-after" content="2 days" />
+	<meta name="verify-v1" content="AHQAXTX71s4Sk3Dcw33/R7AYwQUxMHA6z2PGi0FphRs=" /> <!-- Google tools validation -->
+	<link rel="icon" type="image/png" href="{% static "images/icon.png" %}" />
+	<link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="pages/actus_feed.rss.php" />
+	<link rel="profile" href="http://microformats.org/profile/hcard" />
+	<script type="text/javascript" src="{% static "js/functions.js" %}"></script>
+	<script type="text/javascript" src="{% static "js/modernizr.js" %}"></script>
+</head>
+<body>
+	<div id="page">
+		<header>
+			<h1><a href="" title="Expos Ermont Baseball/Softball Club"><img src="{% static "images/logo_expos.png" %}" alt="Expos Ermont Baseball/Softball Club" /></a></h1>
+			<nav>
+				<ul>
+					<li><a href="{% url 'actus_home' %}" title="Actualités">Actus</a></li>
+					<li><a href="/pages/equipes.php" title="Equipes">Equipes</a></li>
+					<li><a href="/pages/medias.php" title="Photos">Photos</a></li>
+					{% for flatpage in flatpages %}
+						<li><a href="pages{{ flatpage.url }}" title="{{ flatpage.title }}">{{ flatpage.title }}</a></li>
+					{% endfor %}
+				</ul>
+				<div id="usrBox">[%var:userMenu%]</div>
+			</nav>
+			<!-- <a href="http://www.expos-ermont.com/pages/actu/2%C3%88ME+TOURNOI+SOFTBALL+MIXTE+19-20+MARS+2011_297.html" title="Tournoi softball" target="_blank"><img src="picts/banners/tournoi_softball.png" alt="" class="noBorder banner" /></a> -->
+		</header>
+		<!-- Main content BEGIN -->
+		<div id="content">
+			{% block content %}{% endblock %}
+			&nbsp;
+			<div id="endContent">&nbsp;</div>
+		</div>
+		<!-- Main content END -->
+		<!-- Right bar BEGIN -->
+		<aside>
+			<a href="https://www.facebook.com/exposermont" title="Retrouvez nous sur Facebook"><img src="{% static "images/logo_facebook.jpg" %}" alt="Facebook" class="noBorder" /></a><br />
+			<br />
+			{# {% include results %} #}
+			<br />
+			<img src="{% static "images/logo_expos_mini.png" %}" alt="" />
+		</aside>
+		<!-- Right bar END -->
+		&nbsp;
+		<footer>
+			<a href="http://www.w3.org/html/logo/" title="HTML5" target="_blank"><img src="{% static "images/html5.png" %}" alt="" class="noBorder" /></a><a href="http://validator.w3.org/check/referer" title="Site valide html5" target="_blank"><img src="{% static "images/html5_semantics.png" %}" alt="" class="noBorder" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Site valide css 3" target="_blank"><img src="{% static "images/html5_styling.png" %}" alt="" class="noBorder" /></a><br />
+			expos ermont &copy; 2006-2013<br />
+			Baseball club Val d'Oise - Animations sportives
+		</footer>
+	</div>
+	<!-- Google Analytics BEGIN -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-39791805-1']);
+		_gaq.push(['_trackPageview']);
+		
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<!-- Google Analytics END -->
+</body>
+</html>
