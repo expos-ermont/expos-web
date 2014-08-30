@@ -1,0 +1,166 @@
+* {
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
+body {
+	background: #a9a9a9 url(../images/body_background.png) repeat fixed;
+}
+
+a {color: #F6A800;}
+a:hover,a:visited {color: #666666;}
+a:hover {text-decoration: none;}
+a img {border: 1px solid #666666; padding: 2px;}
+a:hover img {border-color: #333333;}
+
+/*****************************************************************************
+ * Header styles
+ ****************************************************************************/
+
+body>div>header h1 {
+	height: 173px;
+	background-image: url(../images/top_background.png);
+	background-repeat: no-repeat;
+	margin-top: 0;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0px 0px 10px;
+}
+
+body>div>header h1 img {
+	margin-top: 20px;
+	margin-left: 25px;
+	border: 0;
+}
+
+nav {
+	background-color: #F6A800 !important;
+	border-radius: 10px !important;
+	border: 5px solid #ffffff !important;
+	box-shadow: 0px 0px 10px !important;
+}
+
+nav a {
+	color: #ffffff !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+nav ul li:hover a, header ul li a:hover {
+	background-color: white !important;
+	color: #F6A800 !important;
+}
+
+/*****************************************************************************
+ * Main content styles
+ ****************************************************************************/
+
+main {
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px;
+	padding: 10px;
+}
+
+main h2 {
+	display: block;
+	border-bottom: 1px solid black;
+}
+
+main table {
+	border: 1px solid #cccccc;
+	border-collapse: collapse;
+}
+main table td {border: 1px solid black;}
+
+main article.actu.promote {
+	background-color: #FACB66;
+	border-radius: 5px;
+	padding: 3px;
+}
+
+main article.actu {
+	margin-bottom: 20px;
+}
+
+main article.actu h2 {
+	float: left;
+	text-transform: uppercase;
+	font-size: 1em;
+	border: 0;
+	margin: 0;
+}
+
+main article.actu h2 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+main article.actu span.date {
+	display: block;
+	text-align: right;
+	border-bottom: 1px solid black;
+	margin-bottom: 5px;
+	padding-top: 0.3em;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+main article.actu span.date * {
+	font-size: 1em;
+}
+
+main article.actu address {
+	display: inline;
+}
+
+main article.actu img.illu {
+	float: right;
+	margin-top: -10px;
+}
+
+/*****************************************************************************
+ * Right panel styles
+ ****************************************************************************/
+
+aside {
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px;
+	text-align: center;
+}
+
+aside table {margin: auto;}
+
+aside table.results {
+	width: 180px;
+	border-radius: 0 0 10px 10px;
+	border: 5px solid #F6A800;
+}
+
+aside table.results caption {
+	background: #F6A800;
+	border-radius: 10px 10px 0 0;
+	color: #ffffff;
+	line-height: 2em;
+}
+
+/*****************************************************************************
+ * Footer styles
+ ****************************************************************************/
+
+footer {text-align: center;}
+footer>a>img {border: 0;}
+
+/*****************************************************************************
+ * Common classes
+ ****************************************************************************/
+
+td.alignTop {vertical-align: top;}
+td.icon {width: 16px;}
+
+.bgLightGray {background-color: #eeeeee;}
+.bgMediumGray {background-color: #bbbbbb;}
+.bgDarkGray {background-color: #666666;}
