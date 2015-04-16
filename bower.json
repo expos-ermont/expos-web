@@ -1,0 +1,20 @@
+{
+  "name": "expos-web",
+  "version": "3.2.0",
+  "authors": [
+    "Florent Captier <florent@captier.org>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "expos/static/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.3"
+  }
+}
