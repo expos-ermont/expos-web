@@ -166,9 +166,6 @@ $content = '
 	load();
 	document.getElementsByTagName("body")[0].onunload = GUnload;
 	</script>
-
-	<h2 id="calendar">Le calendrier</h2>
-	<iframe src="http://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=400&amp;wkst=2&amp;hl=fr&amp;bgcolor=%23ffffff&amp;src=s6lfadcmk0ghdogvhpp26q0c3s%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FParis" style=" border-width:0 " width="565" height="400" frameborder="0" scrolling="no"></iframe>
 ';
 
 $page = new Page();
