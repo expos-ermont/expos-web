@@ -112,11 +112,20 @@ $content = '
 			</td>
 		</tr>
 		<tr>
-			<td>Softball (mixte)</td>
-			<td>Avant 2000</td>
+			<td>Softball mixte</td>
+			<td>Avant 2001</td>
 			<td>
 				<i>Mardi de 20h à 22h</i> ***<br />
 				Mercredi de 20h à 22h
+			</td>
+		</tr>
+		<tr>
+			<td>Softball féminin</td>
+			<td>Avant 2001</td>
+			<td>
+				<i>Mardi de 20h à 22h</i> ***<br />
+				Mercredi de 20h à 22h<br>
+				Samedi de 13h à 15h
 			</td>
 		</tr>
 	</table>
