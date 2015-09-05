@@ -140,7 +140,7 @@ $content = '
 		<li>Siege Social: Service des sports de la mairie d\'ermont, 100 rue Louis Savoie, 95120 Ermont</li>
 		<li>Terrain: Complexe Sportif Gaston Rebuffat, 1 rue Jean de Florette, 95120 Ermont</li>
 		<li>Gymnase Senior: CDFAS, 64 rue des Bouquinvilles, 95600 Eaubonne</li>
-		<li>Gymnase Jeune: Guerin Drouet, 37 bis rue Maurice Berteaux, 95120 Ermont</li>
+		<li>Gymnase Jeune: Complexe Sportif Gaston Rebuffat, 1 rue Jean de Florette, 95120 Ermont</li>
 	</ul>
 	<!--Complexe Gaston Rebuffat<br />
 	95120 Ermont<br />
