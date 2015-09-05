@@ -20,7 +20,7 @@ $content = '
 		<tr>
 			<th>Catégorie</th>
 			<th>
-				Tarifs 2014/2015<br />
+				Tarifs 2015/2016<br />
 				(Cotisation club + License fédérale)
 			</th>
 		</tr>
@@ -33,11 +33,11 @@ $content = '
 			<td><b>160,00€</b></td>
 		</tr>
 		<tr>
-			<td>13 à 18 ans (1997 à 2002)</td>
+			<td>13 à 18 ans (1998 à 2003)</td>
 			<td><b>160,00€</b></td>
 		</tr>
 		<tr>
-			<td>12 ans et moins &lt;2002</td>
+			<td>12 ans et moins &lt;2003</td>
 			<td><b>140,00€</b></td>
 		</tr>
 		<tr>
@@ -54,21 +54,21 @@ $content = '
 		</tr>
 	</table>
 
-	N.B.: les tarifs annoncés intègrent la licence pour la saison 2014/2015s et l\'assurance sportive. Cette dernière peut être remboursée sur demande. L\'assureur fédéral propose également une assurance complémentaire (se renseigner auprès des responsables du club).<br />
+	N.B.: les tarifs annoncés intègrent la licence pour la saison 2015/2016 et l\'assurance sportive. Cette dernière peut être remboursée sur demande. L\'assureur fédéral propose également une assurance complémentaire (se renseigner auprès des responsables du club).<br />
 	Règlement en espèces ou par chèque à l\'ordre des Expos d\'Ermont, possibilité de payer en 3 fois.<br />
-	<h3>Pièces à fournir</h3> 
-	Le dossier d\'inscription rempli,<br /> 
-	Le certificat médical (de préférence médecin du sport), avec surclassement pour tous les enfants, quelque soit la catégorie, 
+	<h3>Pièces à fournir</h3>
+	Le dossier d\'inscription rempli,<br />
+	Le certificat médical (de préférence médecin du sport), avec surclassement pour tous les enfants, quelque soit la catégorie,
 	Autorisation parentale pour les mineurs.
 	<h3>Notes de sécurité</h3>
-	Pour votre sécurité, nous vous demandons de porter une coquille pendant les entrainements et les matchs. L\'assurance ne fonctionne que si la coquille est portée.<br /> 
+	Pour votre sécurité, nous vous demandons de porter une coquille pendant les entrainements et les matchs. L\'assurance ne fonctionne que si la coquille est portée.<br />
 	PAS DE COQUILLE = PAS D\'ENTRAINEMENT = PAS DE MATCH<br />
 	Le club met des gants à votre disposition pendant les entrainements et les matchs. Vous pouvez aussi consulter nos différents catalogues de vente par correspondance<br />
-	<br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2014-2015.pdf" title="Dossier inscription 2014/2015" target="_blank">Dossier d\'incription</a><br /> 
-	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2014-2015.pdf" title="Dossier renseignement 2014/2015" target="_blank">Dossier de renseignement</a><br />
+	<br />
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_inscription_2015-2016.pdf" title="Dossier inscription 2014/2015" target="_blank">Dossier d\'incription</a><br />
+	<a href="'.$_CONF['wwwRoot'].'data/dossier_renseignement_2015-2016.pdf" title="Dossier renseignement 2014/2015" target="_blank">Dossier de renseignement</a><br />
 	<a href="'.$_CONF['wwwRoot'].'data/manuel_baseball.pdf" title="Manuel de baseball" target="_blank">Manuel sur le baseball</a>
-		
+
 	<h2 id="sections">Les sections</h2>
 	<table class="fullWidth">
 		<tr>
@@ -79,9 +79,7 @@ $content = '
 		<tr>
 			<td>U9</td>
 			<td>
-				2008<br />
-				2007<br />
-				2006
+				2007-2009
 			</td>
 			<td>
 				Samedi de 14h à 16h *
@@ -90,9 +88,7 @@ $content = '
 		<tr>
 			<td>U12</td>
 			<td>
-				2005<br />
-				2004<br />
-				2003
+				2004-2006
 			</td>
 			<td>
 				Samedi de 14h à 16h *
@@ -101,33 +97,35 @@ $content = '
 		<tr>
 			<td>U15</td>
 			<td>
-				2002<br />
-				2001<br />
-				2000
+				2001-2003
 			</td>
 			<td>
 				Samedi de 14h à 16h *
 			</td>
 		</tr>
 		<tr>
-			<td>U18-Séniors</td>
-			<td>à partir de 1999</td>
+			<td>U18-Séniors Baseball</td>
+			<td>Avant 2001</td>
 			<td>
 				Mardi de 20h à 22h<br />
-				Jeudi de 20h à 22h
+				Jeudi de 20h à 22h **
 			</td>
 		</tr>
 		<tr>
 			<td>Softball (mixte)</td>
-			<td>Tous âges</td>
+			<td>Avant 2000</td>
 			<td>
-				Lundi de 20h à 22h<br />
+				<i>Mardi de 20h à 22h</i> ***<br />
 				Mercredi de 20h à 22h
 			</td>
 		</tr>
 	</table>
-	<p>(*) Les horaires du samedi sont susceptibles de changer selon le nombre d\'adhérents et des jours de matchs.</p>
-	
+	<p>
+		(*) Les horaires du samedi sont susceptibles de changer selon le nombre d\'adhérents et des jours de matchs.<br>
+		(**) Créneau au gymnase (CDFAS) en période hivernale (décembre-février)<br>
+		(***) Créneau <strong>uniquement</strong> en période hivernale au gymnase (novembre-février)
+	</p>
+
 	<h2 id="adresses">Les bonnes adresses</h2>
 	<ul>
 		<li>Siege Social: Service des sports de la mairie d\'ermont, 100 rue Louis Savoie, 95120 Ermont</li>
@@ -149,7 +147,7 @@ $content = '
 		    var icon = new GIcon();
 				icon.image = "'.$_CONF['wwwRoot'].'picts/logo_expos_mini.png";
 				icon.iconAnchor = new GPoint(51, 24);
-		  
+
 		    var map = new GMap2(document.getElementById("map"));
 		    var geoXml = new GGeoXml("'.$_CONF['wwwRoot'].'expos_map.kml");
 		    map.setCenter(new GLatLng(48.987012,2.243984), 15);
