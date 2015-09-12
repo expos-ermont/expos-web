@@ -109,7 +109,7 @@ div#page>header ul li ul {
 div#page>header ul li:hover ul {display: block;}
 
 div#page>header ul li:hover ul li {
-	float: none; 
+	float: none;
 	margin: 3px;
 	line-height: 1.3em;
 }
@@ -142,6 +142,11 @@ div#page div#content {
 	background-color: #ffffff;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px;
+}
+
+div#page div#map {
+	width: 565px;
+	height: 500px;
 }
 
 div#page div#content h2 {
@@ -316,12 +321,12 @@ div.error {
 
 div.success {
 	border-color: #00DF00;
-	background: #9FFF9F url(../picts/accept.png) no-repeat scroll 3px 3px; 
+	background: #9FFF9F url(../picts/accept.png) no-repeat scroll 3px 3px;
 }
 
 div.info {
 	border-color: #0000DF;
-	background: #AFBDFF url(../picts/information.png) no-repeat scroll 3px 3px; 
+	background: #AFBDFF url(../picts/information.png) no-repeat scroll 3px 3px;
 }
 
 a.markupIcon {margin: 2px 2px 2px 0;}

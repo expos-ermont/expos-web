@@ -142,39 +142,39 @@ $content = '
 		<li>Gymnase Senior: CDFAS, 64 rue des Bouquinvilles, 95600 Eaubonne</li>
 		<li>Gymnase Jeune: Complexe Sportif Gaston Rebuffat, 1 rue Jean de Florette, 95120 Ermont</li>
 	</ul>
-	<!--Complexe Gaston Rebuffat<br />
-	95120 Ermont<br />
-	Juste derrière le Cora<br />-->
 	<br />
-	<!--<img src="picts/plan.png" alt="Plan" />-->
-	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1464aNC0FEMIR-kxU44MUxTfvuWSyVlBkpFZBWaGxGgw3hZkNRTTyll8ySOdGMOTio9RATaWjO55sA" type="text/javascript">
-	</script>
+	<div id="map"></div>
 	<script type="text/javascript">
-		//<![CDATA[
-		function load() {
-		  if (GBrowserIsCompatible()) {
-		    var icon = new GIcon();
-				icon.image = "'.$_CONF['wwwRoot'].'picts/logo_expos_mini.png";
-				icon.iconAnchor = new GPoint(51, 24);
+		var map;
+		function initMap() {
+			var myLatLng = {lat: 48.987012, lng: 2.243984};
 
-		    var map = new GMap2(document.getElementById("map"));
-		    var geoXml = new GGeoXml("'.$_CONF['wwwRoot'].'expos_map.kml");
-		    map.setCenter(new GLatLng(48.987012,2.243984), 15);
-		    map.addControl(new GLargeMapControl());
-		    map.addControl(new GMapTypeControl());
-		    var marker = new GMarker(new GLatLng(48.987012,2.243984) , icon);
-	      map.addOverlay(marker);
-	      map.addOverlay(geoXml);
-				map.enableScrollWheelZoom();
-		  }
+			map = new google.maps.Map(document.getElementById("map"), {
+				center: myLatLng,
+    		zoom: 15,
+				mapTypeControl: true,
+		    mapTypeControlOptions: {
+		      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+		      mapTypeIds: [
+		        google.maps.MapTypeId.ROADMAP,
+		        google.maps.MapTypeId.TERRAIN
+		      ]
+		    },
+		    zoomControl: true,
+		    zoomControlOptions: {
+		      style: google.maps.ZoomControlStyle.SMALL
+		    }
+			});
+
+			var image = "'.$_CONF['wwwRoot'].'picts/logo_expos_mini.png";
+		  var marker = new google.maps.Marker({
+		    position: myLatLng,
+		    map: map,
+		    icon: image
+		  });
 		}
-		//]]>
 	</script>
-	<div id="map" style="width: 565px; height: 500px"></div>
-	<script type="text/javascript">
-	load();
-	document.getElementsByTagName("body")[0].onunload = GUnload;
-	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3K2m02-rBVOUOCd-H3PWsxsnOVQxzvM&callback=initMap" type="text/javascript"></script>
 ';
 
 $page = new Page();
